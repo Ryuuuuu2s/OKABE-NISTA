@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+
+.header {
+    padding: 30px;
+}
+
+/* GRAMNISTA h1 */
+.header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* グラデーション枠 */
+.outer {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, rgb(254, 82, 111), rgb(68, 120, 251));
+    width: 100%;
+}
+
+/* スマホの画像 */
+.outer.outer--bg img {
+    position: relative;
+    opacity: 0.5;
+    width: 100%;
+}
+
+/* 透明な白枠内 */
+.inner {
+    display: flex;
+    position: absolute;
+    background-color: rgb(255, 255, 255, .5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+.inner2 {
+    padding: 120px 100px;
+}
+
+/* Instagram運用ならお任せください画像 */
+.herotitle img {}
+
+/* 支援します */
+.words {
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+}
+
+.word p {
+   
+}
+
+/* 赤枠 */
+.contact {
+    background-color: rgb(252, 59, 91);
+    padding: 10px;
+    width: 400px;
+    height: fit-content;
+    display: block;
+    margin-top: 200px;
+    margin-right: 30px;
+}
+
+.contact.contact--inner{
+    padding: 20px;
+    border: 2px solid white;
+}
+
+/* 詳細・お問い合わせはこちらから */
+.contact p {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+/* KV2 ここから */
+
+.comment {
+    margin: 10px 40px;
+}
+
+/* ハート、吹き出し、紙飛行機、ブクマ */
+.instaicon {
+  display: flex;
+}
+.icon--right{
+    padding-left: 85%;
+}
+
+
+/* 顔のアイコン */
+.goodicon {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/* いいね! */
+.goodicon p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.KV--words {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.KV--words h4 {
+    font-weight: bold;
+}
+
+.KV--words p {
+    margin-left: 15px;
+}
+
+/* ハッシュタグ */
+.hashtug p {
+    color: rgb(82, 82, 187);
+}
+
+/* メイン　ここから */
+.main--onayami {
+    position: relative;
+}
+
+.onayami--logo{
+position: absolute;
+top:10%;
+left: 43%;
+}
+/* オレンジの雲 */
+.motion2 {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+/* ピンクの雲 */
+.motion3 {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+}
+
+/* ブルーの雲 */
+.motion4 {
+    position: absolute;
+    left:20%;
+    top:40%;
+}
+.hukidashi--1{
+    position: absolute;
+    top:30%;
+    left: 30%;
+}
+.hukidashi--2{
+position: absolute;
+top:30%;
+left: 50%;
+}
+.hukidashi--3{
+position: absolute;
+top:30%;
+right: 3%;
+}
+.hukidashi--4{
+    position: absolute;
+    top:40%;
+    left: 30%;
+}
+.hukidashi--5{
+    position: absolute;
+    top: 45%;
+    left: 55%;
+}
+.hukidashi--6{
+    position: absolute;
+    top:45%;
+    right: 5%;
+}
+.hukidashi--7{
+position: absolute;
+bottom: 40%;
+left: 30%;
+}
+.hukidashi--8{
+position: absolute;
+bottom: 40%;
+left: 50%;
+}
+.hukidashi--9{
+position: absolute;
+bottom: 35%;
+right: 10%;
+}
+
+.omakase{
+position: absolute;
+bottom: 5%;
+left: 40%;
+}
+.denkyu{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+.onayami--person{
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 1000px;
+    height: auto;
+}
+/* 雲 */
+.motion5{
+    position: absolute;
+    bottom: 25%;
+    left: 30%;
+    width: 1100px;
+    height: auto;
+}
+/* メイン　１　ここまで */
+
+/* ピンク　背景 */
+.main--2{
+    background-color: rgb(255, 229, 233);
+}
+/* 背景　画像 */
+.main--back2{
+    position: relative;
+    width: auto;
+}
+/* グラムニスタ　とは */
+.how--logo{
+    position: absolute;
+    top: 20%;
+}
+
+/* フッター */
+footer {
+    color: darkblue;
+    background: gainsboro;
+
+}
+
+/* h1 会社概要 */
+.footer_title {
+
+    text-align: center;
+    padding: 60px;
+
+
+}
+
+/* グレー枠　概要タイトル&内容Ï */
+.container {
+    margin: auto;
+    display: flex;
+}
+
+
+/* グレー枠　概要タイトル */
+.box {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 60px;
+    margin: auto;
+    padding-bottom: 5%;
+
+}
+
+/* グレー枠　概要内容 */
+.box2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: left;
+    line-height: 60px;
+    margin: auto;
+    padding-bottom: 5%;
+
+}
+
+/* 青枠フッター */
+#footer_under {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 70px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    background: rgb(103, 103, 196);
+
+}
