@@ -241,7 +241,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    bottom: 0;
 }
 
 .outer .inner .inner--deco .icon:nth-child(1),
@@ -357,4 +356,51 @@ body {
         width: 8%;
         right: -9%;
     }
+}
+
+/* アニメーション */
+/* toTop */
+.toTop{
+    animation: toTop 8s ease-in-out infinite;
+    opacity: 0;
+}
+@keyframes toTop {
+    0% {
+       bottom: 0;
+        opacity: 0;
+    }
+    5%{
+        bottom: 0;
+        opacity: .3;
+    }
+    10%{
+        bottom: 0;
+        opacity: 1;
+    }
+    100% {
+       bottom: 95%;
+        opacity: 0;
+    }
+}
+
+/* animation-delay */
+.delay05 {
+    animation-delay: 0.5s;
+}
+.delay10 {
+    animation-delay: 1s;
+}
+.delay15 {
+    animation-delay: 1.5s;
+}
+.delay20 {
+    animation-delay: 2s;
+}
+
+/* animation-duration */
+.duration5 {
+    animation-duration: 5s;
+}
+.duration10 {
+    animation-duration: 10s;
 }
