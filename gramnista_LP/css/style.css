@@ -1,14 +1,71 @@
 @charset "utf-8";
 
-
-.header {
-    padding: 30px;
-}
-
-/* GRAMNISTA h1 */
-.header h1 {
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.wapper {
+    overflow: hidden;
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+    .wapper {
+        min-width: 1200px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .wapper {
+        width: 100%;
+    }
+}
+
+/* ヘッダー ここから */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 30px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 20px;
+    }
+}
+
+.header h1 {
+    font-weight: bold;
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+    .header h1 {
+        font-size: 30px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .header h1 {
+        font-size: 20px;
+    }
+}
+
+/* KV　ここから */
 
 /* グラデーション枠 */
 .outer {
@@ -18,284 +75,627 @@
     width: 100%;
 }
 
-/* スマホの画像 */
-.outer.outer--bg img {
-    position: relative;
-    opacity: 0.5;
+/* PC */
+@media screen and (min-width: 768px) {
+    .outer {
+        height: 600px;
+        margin-top: 90px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .outer {
+        height: 500px;
+        margin-top: 60px;
+    }
+}
+
+.outer--bg,
+.outer--bg img {
     width: 100%;
+    height: 100%;
+}
+
+.outer--bg img {
+    opacity: .5;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* 透明な白枠内 */
 .inner {
     display: flex;
     position: absolute;
-    background-color: rgb(255, 255, 255, .5);
+    /* background-color: rgb(255, 255, 255, .5); */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1200px;
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+    .inner {
+        align-items: center;
+        gap: 60px;
+        width: fit-content;
+        padding: 40px 60px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .inner {
+        flex-direction: column;
+        gap: 30px;
+        width: 80%;
+        padding: 30px 20px;
+    }
 }
 
 .inner2 {
-    padding: 120px 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Instagram運用ならお任せください画像 */
-.herotitle img {}
+/* PC */
+@media screen and (min-width: 768px) {
+    .inner2 {
+        gap: 30px;
+    }
+}
 
-/* 支援します */
+/* SP */
+@media screen and (max-width: 767px) {
+    .inner2 {
+        gap: 30px;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+    .herotitle {
+        width: 500px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .herotitle {
+        width: 100%;
+    }
+}
+
+.herotitle img {
+    width: 100%;
+}
+
 .words {
-    margin: 30px;
-    font-size: 20px;
     text-align: center;
-    line-height: 20px;
+}
+
+.words p {
     font-family: "Yu Gothic Medium", "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+    line-height: 1.5;
 }
 
-.word p {
-   
+/* PC */
+@media screen and (min-width: 768px) {
+    .words p {
+        font-size: 20px;
+    }
 }
 
-/* 赤枠 */
+/* SP */
+@media screen and (max-width: 767px) {
+    .words p {
+        font-size: calc((12 / 390) * 100vw);
+    }
+}
+
 .contact {
     background-color: rgb(252, 59, 91);
-    padding: 10px;
-    width: 400px;
     height: fit-content;
     display: block;
-    margin-top: 200px;
-    margin-right: 30px;
+    padding: 10px;
 }
 
-.contact.contact--inner{
-    padding: 20px;
+/* PC */
+@media screen and (min-width: 768px) {
+    .contact {
+        width: 400px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .contact {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+.contact .contact--inner {
+    padding: 20px 0;
     border: 2px solid white;
 }
 
-/* 詳細・お問い合わせはこちらから */
-.contact p {
+/* PC */
+@media screen and (min-width: 768px) {
+    .contact .contact--inner {
+        padding: 20px 0;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .contact .contact--inner {
+        padding: 30px 20px;
+    }
+}
+
+.contact .contact--inner p {
     text-align: center;
     color: white;
-    padding: 10px;
 }
 
-/* KV2 ここから */
-
-.comment {
-    margin: 10px 40px;
+/* PC */
+@media screen and (min-width: 768px) {
+    .contact .contact--inner p {
+        font-size: 16px;
+    }
 }
 
-/* ハート、吹き出し、紙飛行機、ブクマ */
-.instaicon {
-  display: flex;
-}
-.icon--right{
-    padding-left: 85%;
-}
-
-
-/* 顔のアイコン */
-.goodicon {
-    display: flex;
-    margin-top: 15px;
-    margin-bottom: 30px;
+/* SP */
+@media screen and (max-width: 767px) {
+    .contact .contact--inner p {
+        font-size: calc((12 / 390) * 100vw);
+    }
 }
 
-/* いいね! */
-.goodicon p {
-    margin-top: 10px;
-    margin-left: 10px;
+.outer .inner .inner--deco {
+    display: contents;
 }
 
-.KV--words {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.KV--words h4 {
-    font-weight: bold;
-}
-
-.KV--words p {
-    margin-left: 15px;
-}
-
-/* ハッシュタグ */
-.hashtug p {
-    color: rgb(82, 82, 187);
-}
-
-/* メイン　ここから */
-.main--onayami {
-    position: relative;
-}
-
-.onayami--logo{
-position: absolute;
-top:10%;
-left: 43%;
-}
-/* オレンジの雲 */
-.motion2 {
+.outer .inner .inner--deco .icon {
+    aspect-ratio: 236/172;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
-    left: 30px;
-    top: 30px;
+    /* bottom: 0; */
 }
 
-/* ピンクの雲 */
-.motion3 {
-    position: absolute;
-    right: 80px;
-    top: 30px;
+.outer .inner .inner--deco .icon:nth-child(1),
+.outer .inner .inner--deco .icon:nth-child(6),
+.outer .inner .inner--deco .icon:nth-child(7) {
+    background-image: url(/images/hukidasi1.png);
 }
 
-/* ブルーの雲 */
-.motion4 {
-    position: absolute;
-    left:20%;
-    top:40%;
-}
-.hukidashi--1{
-    position: absolute;
-    top:30%;
-    left: 30%;
-}
-.hukidashi--2{
-position: absolute;
-top:30%;
-left: 50%;
-}
-.hukidashi--3{
-position: absolute;
-top:30%;
-right: 3%;
-}
-.hukidashi--4{
-    position: absolute;
-    top:40%;
-    left: 30%;
-}
-.hukidashi--5{
-    position: absolute;
-    top: 45%;
-    left: 55%;
-}
-.hukidashi--6{
-    position: absolute;
-    top:45%;
-    right: 5%;
-}
-.hukidashi--7{
-position: absolute;
-bottom: 40%;
-left: 30%;
-}
-.hukidashi--8{
-position: absolute;
-bottom: 40%;
-left: 50%;
-}
-.hukidashi--9{
-position: absolute;
-bottom: 35%;
-right: 10%;
+.outer .inner .inner--deco .icon:nth-child(2),
+.outer .inner .inner--deco .icon:nth-child(4) {
+    background-image: url(/images/hukidasi3.png);
 }
 
-.omakase{
-position: absolute;
-bottom: 5%;
-left: 40%;
-}
-.denkyu{
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
-.onayami--person{
-    position: absolute;
-    bottom: 15%;
-    left: 25%;
-    width: 1000px;
-    height: auto;
-}
-/* 雲 */
-.motion5{
-    position: absolute;
-    bottom: 25%;
-    left: 30%;
-    width: 1100px;
-    height: auto;
-}
-/* メイン　１　ここまで */
-
-/* ピンク　背景 */
-.main--2{
-    background-color: rgb(255, 229, 233);
-}
-/* 背景　画像 */
-.main--back2{
-    position: relative;
-    width: auto;
-}
-/* グラムニスタ　とは */
-.how--logo{
-    position: absolute;
-    top: 20%;
+.outer .inner .inner--deco .icon:nth-child(3),
+.outer .inner .inner--deco .icon:nth-child(5) {
+    background-image: url(/images/hukidasi4.png);
 }
 
-/* フッター */
-footer {
-    color: darkblue;
-    background: gainsboro;
-
+/* PC */
+@media screen and (min-width: 768px) {
+    .outer .inner .inner--deco .icon:nth-child(1) {
+        width: 40px;
+        left: 0;
+    }
 }
 
-/* h1 会社概要 */
-.footer_title {
-
-    text-align: center;
-    padding: 60px;
-
-
+/* SP */
+@media screen and (max-width: 767px) {
+    .outer .inner .inner--deco .icon:nth-child(1) {
+        width: 6%;
+        left: -5%;
+    }
 }
 
-/* グレー枠　概要タイトル&内容Ï */
-.container {
-    margin: auto;
-    display: flex;
+/* PC */
+@media screen and (min-width: 768px) {
+    .outer .inner .inner--deco .icon:nth-child(2) {
+        width: 80px;
+        left: -50px;
+    }
 }
 
-
-/* グレー枠　概要タイトル */
-.box {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    line-height: 60px;
-    margin: auto;
-    padding-bottom: 5%;
-
+/* SP */
+@media screen and (max-width: 767px) {
+    .outer .inner .inner--deco .icon:nth-child(2) {
+        width: 10%;
+        left: -2%;
+    }
 }
 
-/* グレー枠　概要内容 */
-.box2 {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    text-align: left;
-    line-height: 60px;
-    margin: auto;
-    padding-bottom: 5%;
-
+/* PC */
+@media screen and (min-width: 768px) {
+    .outer .inner .inner--deco .icon:nth-child(3) {
+        width: 50px;
+        left: 30px;
+    }
 }
 
-/* 青枠フッター */
-#footer_under {
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 70px;
-    padding: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    background: rgb(103, 103, 196);
+/* SP */
+@media screen and (max-width: 767px) {
+    .outer .inner .inner--deco .icon:nth-child(3) {
+        width: 8%;
+        left: 1%;
+    }
+}
 
+/* PC */
+@media screen and (min-width: 768px) {
+    .outer .inner .inner--deco .icon:nth-child(4) {
+        width: 80px;
+        right: 10px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .outer .inner .inner--deco .icon:nth-child(4) {
+        width: 10%;
+        right: 1%;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+    .outer .inner .inner--deco .icon:nth-child(5) {
+        width: 40px;
+        right: 500px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .outer .inner .inner--deco .icon:nth-child(5) {
+        width: 6%;
+        right: 0%;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+    .outer .inner .inner--deco .icon:nth-child(6) {
+        width: 40px;
+        right: 60px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .outer .inner .inner--deco .icon:nth-child(6) {
+        width: 6%;
+        right: -3%;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 768px) {
+    .outer .inner .inner--deco .icon:nth-child(7) {
+        width: 60px;
+        right: 530px;
+    }
+}
+
+/* SP */
+@media screen and (max-width: 767px) {
+    .outer .inner .inner--deco .icon:nth-child(7) {
+        width: 8%;
+        right: -9%;
+    }
+}
+
+/* アニメーション */
+/* toTop */
+.toTop {
+    animation: toTop 8s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes toTop {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    5% {
+        bottom: 0;
+        opacity: .3;
+    }
+
+    10% {
+        bottom: 0;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 95%;
+        opacity: 0;
+    }
+}
+
+/* animation-delay */
+.delay05 {
+    animation-delay: 0.5s;
+}
+
+.delay10 {
+    animation-delay: 1s;
+}
+
+.delay15 {
+    animation-delay: 1.5s;
+}
+
+.delay20 {
+    animation-delay: 2s;
+}
+
+/* animation-duration */
+.duration5 {
+    animation-duration: 5s;
+}
+
+.duration10 {
+    animation-duration: 10s;
+    /* KV ここまで */
+
+
+    /* KV2 ここから */
+
+    .comment {
+        background-color: white;
+    }
+
+
+    /* ハート、吹き出し、紙飛行機、ブクマ */
+    .instaicon {
+        display: flex;
+    }
+
+    .instaicon .icon--right {
+        padding-left: 85%;
+    }
+
+
+    /* 顔のアイコン */
+    .goodicon {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* いいね! */
+    .goodicon p {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .KV--words {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .KV--words h4 {
+        font-weight: bold;
+    }
+
+    .KV--words p {
+        margin-left: 15px;
+    }
+
+    /* ハッシュタグ */
+    .hashtug p {
+        color: rgb(82, 82, 187);
+    }
+
+    /* メイン　ここから */
+    .main--onayami {
+        position: relative;
+    }
+    .main--back img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* PC */
+@media screen and(min-width:768px){
+    .main--back img{
+
+    }
+}
+    .main--onayami .onayami--logo {
+        position: absolute;
+        top: 10%;
+        left: 43%;
+    }
+
+    /* オレンジの雲 */
+    .motion2 {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+
+    /* ピンクの雲 */
+    .motion3 {
+        position: absolute;
+        right: 80px;
+        top: 30px;
+    }
+
+    /* ブルーの雲 */
+    .motion4 {
+        position: absolute;
+        left: 20%;
+        top: 40%;
+    }
+
+    .hukidashi--1 {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .hukidashi--2 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+    }
+
+    .hukidashi--3 {
+        position: absolute;
+        top: 30%;
+        right: 3%;
+    }
+
+    .hukidashi--4 {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+    }
+
+    .hukidashi--5 {
+        position: absolute;
+        top: 45%;
+        left: 55%;
+    }
+
+    .hukidashi--6 {
+        position: absolute;
+        top: 45%;
+        right: 5%;
+    }
+
+    .hukidashi--7 {
+        position: absolute;
+        bottom: 40%;
+        left: 30%;
+    }
+
+    .hukidashi--8 {
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+    }
+
+    .hukidashi--9 {
+        position: absolute;
+        bottom: 35%;
+        right: 10%;
+    }
+
+    .omakase {
+        position: absolute;
+        bottom: 5%;
+        left: 40%;
+    }
+
+    .denkyu {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+    }
+
+    .onayami--person {
+        position: absolute;
+        bottom: 15%;
+        left: 25%;
+        width: 1000px;
+        height: auto;
+    }
+
+    /* 雲 */
+    .motion5 {
+        position: absolute;
+        bottom: 25%;
+        left: 30%;
+        width: 1100px;
+        height: auto;
+    }
+
+    /* メイン　１　ここまで */
+
+    /* ピンク　背景 */
+    .main--2 {
+        background-color: rgb(255, 229, 233);
+    }
+
+    /* 背景　画像 */
+    .main--back2 {
+        position: relative;
+        width: auto;
+    }
+
+    /* グラムニスタ　とは */
+    .how--logo {
+        position: absolute;
+        top: 20%;
+    }
+
+    /* フッター */
+    footer {
+        color: darkblue;
+        background: gainsboro;
+
+    }
+
+    /* h1 会社概要 */
+    .footer_title {
+
+        text-align: center;
+        padding: 60px;
+
+
+    }
+
+    /* グレー枠　概要タイトル&内容Ï */
+    .container {
+        margin: auto;
+        display: flex;
+    }
+
+
+    /* グレー枠　概要タイトル */
+    .box {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 60px;
+        margin: auto;
+        padding-bottom: 5%;
+
+    }
+
+    /* グレー枠　概要内容 */
+    .box2 {
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        text-align: left;
+        line-height: 60px;
+        margin: auto;
+        padding-bottom: 5%;
+
+    }
+
+    /* 青枠フッター */
+    #footer_under {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 70px;
+        padding: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: aliceblue;
+        background: rgb(103, 103, 196);
+    }
 }
