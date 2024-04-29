@@ -4,28 +4,34 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.wapper {
+.wrapper {
     overflow: hidden;
 }
 
 /* PC */
 @media screen and (min-width: 768px) {
-    .wapper {
+
+    /* 画面サイズが768pxからはここを読み込む */
+    .wrapper {
         min-width: 1200px;
+        /* PC ラッパー部分横幅1200px */
     }
 }
 
 /* SP */
 @media screen and (max-width: 767px) {
-    .wapper {
+
+    /* 画面サイズが767pxまではここを読み込む */
+    .wrapper {
         width: 100%;
     }
 }
 
 /* ヘッダー ここから */
-
+/*---------------------------------------------------------------------*/
 .header {
     position: fixed;
+    /*  要素の位置を固定 */
     top: 0;
     left: 0;
     width: 100%;
@@ -49,6 +55,7 @@ body {
 
 .header h1 {
     font-weight: bold;
+    /* 太字 */
 }
 
 /* PC */
@@ -66,11 +73,12 @@ body {
 }
 
 /* KV　ここから */
-
+/* ------------------------------------------------------------------------------------ */
 /* グラデーション枠 */
 .outer {
     position: relative;
     display: inline-block;
+    /* 横並び */
     background: linear-gradient(to right, rgb(254, 82, 111), rgb(68, 120, 251));
     width: 100%;
 }
@@ -100,25 +108,33 @@ body {
 .outer--bg img {
     opacity: .5;
     object-fit: cover;
+    /* アスペクト維持したまま拡大縮小 */
     object-position: center;
 }
+
+
 
 /* 透明な白枠内 */
 .inner {
     display: flex;
+    /* 横並び */
     position: absolute;
-    /* background-color: rgb(255, 255, 255, .5); */
+    background-color: rgb(255, 255, 255, .5);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /*  中央揃え */
 }
 
 /* PC */
 @media screen and (min-width: 768px) {
     .inner {
         align-items: center;
+        /* アイテムを中央付近にまとめる */
         gap: 60px;
+        /*  行や列の隙間 */
         width: fit-content;
+        /*  ボックス */
         padding: 40px 60px;
     }
 }
@@ -127,6 +143,7 @@ body {
 @media screen and (max-width: 767px) {
     .inner {
         flex-direction: column;
+        /*  主軸の方向や向き */
         gap: 30px;
         width: 80%;
         padding: 30px 20px;
@@ -136,6 +153,7 @@ body {
 .inner2 {
     display: flex;
     flex-direction: column;
+    /* 主軸の方向や向き */
 }
 
 /* PC */
@@ -149,6 +167,7 @@ body {
 @media screen and (max-width: 767px) {
     .inner2 {
         gap: 30px;
+        /* 行や列の隙間 */
     }
 }
 
@@ -166,12 +185,15 @@ body {
     }
 }
 
+/* Instagram運用ならお任せください */
 .herotitle img {
     width: 100%;
 }
 
+/* 運用を支援します */
 .words {
     text-align: center;
+    /* 中央揃え */
 }
 
 .words p {
@@ -196,7 +218,8 @@ body {
 .contact {
     background-color: rgb(252, 59, 91);
     height: fit-content;
-    display: block;
+    /* 親要素からはみ出さず伸縮 */
+    display: block;      /*  横に広がり縦に並ぶ */
     padding: 10px;
 }
 
@@ -211,13 +234,16 @@ body {
 @media screen and (max-width: 767px) {
     .contact {
         width: fit-content;
+        /* ボックス */
         margin: 0 auto;
+        /*  中央揃え */
     }
 }
 
 .contact .contact--inner {
     padding: 20px 0;
     border: 2px solid white;
+    /* ボーダー */
 }
 
 /* PC */
@@ -255,15 +281,15 @@ body {
 
 .outer .inner .inner--deco {
     display: contents;
+    /* ボックス非生成 */
 }
 
 .outer .inner .inner--deco .icon {
-    aspect-ratio: 236/172;
-    background-size: contain;
-    background-repeat: no-repeat;
+    aspect-ratio: 236/172;             /* 推奨アスペクト比 width/height */
+    background-size: contain;        /* コンテナー内で可能な限り大きく */
+    background-repeat: no-repeat;          /*  背景画像をリピートしない */
     background-position: center;
-    position: absolute;
-    /* bottom: 0; */
+    position: absolute;                   /* 画像　上 */
 }
 
 .outer .inner .inner--deco .icon:nth-child(1),
@@ -396,6 +422,7 @@ body {
 
 /* アニメーション */
 /* toTop */
+/* ------------------------------------------------------------------------ */
 .toTop {
     animation: toTop 8s ease-in-out infinite;
     opacity: 0;
@@ -449,20 +476,34 @@ body {
     animation-duration: 10s;
     /* KV ここまで */
 
-
+    /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
     /* KV2 ここから */
-
     .comment {
+        width: 100%;
         background-color: white;
+    }
+
+    /* PC */
+    @media screen and(min-width:768px) {
+        .comment {
+            padding: 10px 20px;
+        }
+    }
+
+    /* SP */
+    @media screen and(max-width:767px) {
+        .comment {
+            padding: 10px;
+        }
     }
 
 
     /* ハート、吹き出し、紙飛行機、ブクマ */
-    .instaicon {
+    .icon--left img {
         display: flex;
     }
 
-    .instaicon .icon--right {
+    .icon--right {
         padding-left: 85%;
     }
 
@@ -479,42 +520,61 @@ body {
         margin-top: 10px;
         margin-left: 10px;
     }
+.messages{
+    
+
+}
 
     .KV--words {
-        display: flex;
-        margin-bottom: 20px;
+        display:inline-block;
     }
 
     .KV--words h4 {
         font-weight: bold;
     }
 
-    .KV--words p {
-        margin-left: 15px;
-    }
-
     /* ハッシュタグ */
     .hashtug p {
-        color: rgb(82, 82, 187);
+        font-size: 12px;   
+        color: blue;
     }
 
+    /* KV2 ここまで */
+
     /* メイン　ここから */
-    .main--onayami {
-        position: relative;
+    /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+    .onayami {
+        background-color: white;
+
     }
-    .main--back img{
+
+    .onayami--inner .onayami--back img {
         position: relative;
+        top: 0;
+        object-position: cover;
+        object-position: center;
         width: 100%;
         height: 100%;
+        top: 0;
     }
 
     /* PC */
-@media screen and(min-width:768px){
-    .main--back img{
-
+    @media screen and(min-width:768px) {
+        .onayami--inner .onayami--back img {
+            background-size: auto;
+        }
     }
-}
-    .main--onayami .onayami--logo {
+
+    /* SP */
+    @media screen and(max-width:767px) {
+        .onayami--inner .onayami--back img {
+            background-size: auto;
+        }
+    }
+
+
+
+    .onayami--inner .onayami--logo {
         position: absolute;
         top: 10%;
         left: 43%;
@@ -626,6 +686,9 @@ body {
 
     /* メイン　１　ここまで */
 
+    /* メイン２ ここから */
+    /* ------------------------------------------------------------------*/
+
     /* ピンク　背景 */
     .main--2 {
         background-color: rgb(255, 229, 233);
@@ -643,7 +706,10 @@ body {
         top: 20%;
     }
 
-    /* フッター */
+    /* メイン2 ここまで */
+
+    /* フッター ここから*/
+    /* ---------------------------------------------------------------- */
     footer {
         color: darkblue;
         background: gainsboro;
