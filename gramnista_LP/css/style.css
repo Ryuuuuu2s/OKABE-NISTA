@@ -219,7 +219,8 @@ body {
     background-color: rgb(252, 59, 91);
     height: fit-content;
     /* 親要素からはみ出さず伸縮 */
-    display: block;      /*  横に広がり縦に並ぶ */
+    display: block;
+    /*  横に広がり縦に並ぶ */
     padding: 10px;
 }
 
@@ -285,11 +286,15 @@ body {
 }
 
 .outer .inner .inner--deco .icon {
-    aspect-ratio: 236/172;             /* 推奨アスペクト比 width/height */
-    background-size: contain;        /* コンテナー内で可能な限り大きく */
-    background-repeat: no-repeat;          /*  背景画像をリピートしない */
+    aspect-ratio: 236/172;
+    /* 推奨アスペクト比 width/height */
+    background-size: contain;
+    /* コンテナー内で可能な限り大きく */
+    background-repeat: no-repeat;
+    /*  背景画像をリピートしない */
     background-position: center;
-    position: absolute;                   /* 画像　上 */
+    position: absolute;
+    /* 画像　上 */
 }
 
 .outer .inner .inner--deco .icon:nth-child(1),
@@ -474,294 +479,478 @@ body {
 
 .duration10 {
     animation-duration: 10s;
-    /* KV ここまで */
+}
 
-    /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
-    /* KV2 ここから */
+/* KV ここまで */
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+/* KV2 ここから */
+.comment {
+    background-color: white;
+}
+
+/* PC */
+@media screen and(min-width:768px) {
     .comment {
-        width: 100%;
-        background-color: white;
+        padding: 10px 20px;
     }
+}
 
-    /* PC */
-    @media screen and(min-width:768px) {
-        .comment {
-            padding: 10px 20px;
-        }
+/* SP */
+@media screen and(max-width:767px) {
+    .comment {
+        padding: 10px;
     }
+}
 
-    /* SP */
-    @media screen and(max-width:767px) {
-        .comment {
-            padding: 10px;
-        }
+
+/* ハート、吹き出し、紙飛行機、ブクマ */
+.comment .instaicon {
+    display: flex;
+}
+
+/* 顔のアイコン */
+.goodicon {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+/* いいね! */
+.goodicon p {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.messages {
+    display: flex;
+}
+
+.KV--words h4 {
+    font-weight: bold;
+}
+
+/* ハッシュタグ */
+.hashtug p {
+    font-size: 12px;
+    color: blue;
+}
+
+/* KV2 ここまで */
+
+/* メイン　ここから */
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.onayami {
+    background-color: white;
+    background-image: url(../images/detailbg.png);
+    /* 背景画像 */
+    background-position: 50% 50%;
+    /* 画像中央を起点に表示 */
+    height: 2000px;
+    position: relative;
+}
+
+/* PC */
+@media screen and(min-width:768px) {
+    .onayami {
+        background-size: contain;
+        /* 縦横比を維持しながら全体に収まるように表示 */
     }
+}
 
-
-    /* ハート、吹き出し、紙飛行機、ブクマ */
-    .icon--left img {
-        display: flex;
+/* SP */
+@media screen and(max-width:767px) {
+    .onayami {
+        background-size: contain;
+        /* 縦横比を維持しながら全体に収まるように表示 */
     }
-
-    .icon--right {
-        padding-left: 85%;
-    }
-
-
-    /* 顔のアイコン */
-    .goodicon {
-        display: flex;
-        margin-top: 15px;
-        margin-bottom: 30px;
-    }
-
-    /* いいね! */
-    .goodicon p {
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-.messages{
-    
 
 }
 
-    .KV--words {
-        display:inline-block;
-    }
+.onayami--logo {
+    top: 6%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
 
-    .KV--words h4 {
-        font-weight: bold;
-    }
-
-    /* ハッシュタグ */
-    .hashtug p {
-        font-size: 12px;   
-        color: blue;
-    }
-
-    /* KV2 ここまで */
-
-    /* メイン　ここから */
-    /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-    .onayami {
-        background-color: white;
+/* PC */
+@media screen and(min-width:768px) {
+    .onayami--logo {
+        width: 60%;
 
     }
 
-    .onayami--inner .onayami--back img {
-        position: relative;
-        top: 0;
-        object-position: cover;
-        object-position: center;
-        width: 100%;
-        height: 100%;
-        top: 0;
+}
+
+/* SP */
+@media screen and(max-width:767px) {
+    .onayami--logo {
+        width: 60%;
     }
 
-    /* PC */
-    @media screen and(min-width:768px) {
-        .onayami--inner .onayami--back img {
-            background-size: auto;
-        }
+}
+
+
+
+/* オレンジの雲 */
+.motion2 {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+/* ピンクの雲 */
+.motion3 {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+}
+
+/* ブルーの雲 */
+.motion4 {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
+.hukidashi--1 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.hukidashi--2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.hukidashi--3 {
+    position: absolute;
+    top: 30%;
+    right: 3%;
+}
+
+.hukidashi--4 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.hukidashi--5 {
+    position: absolute;
+    top: 45%;
+    left: 55%;
+}
+
+.hukidashi--6 {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+
+.hukidashi--7 {
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+}
+
+.hukidashi--8 {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+}
+
+.hukidashi--9 {
+    position: absolute;
+    bottom: 35%;
+    right: 10%;
+}
+
+.omakase {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+
+.denkyu {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.onayami--person {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 1000px;
+    height: auto;
+}
+
+/* 雲 */
+.motion5 {
+    position: absolute;
+    bottom: 25%;
+    left: 30%;
+    width: 1100px;
+    height: auto;
+}
+
+/* メイン　１　ここまで */
+
+/* メイン２ ここから */
+/* ------------------------------------------------------------------*/
+
+/* ピンク　背景 */
+.how {
+    background-color: rgb(255, 229, 233);
+    background-image: url(../images/bg.png);
+    /* 背景画像 */
+    background-position: 50% 50%;
+    /* 画像中央を起点に表示 */
+    height: 2000px;
+    position: relative;
+
+}
+
+/* PC */
+@media screen and(min-width:768px) {
+    .how {
+        background-size: contain;
+        /* 縦横比を維持しながら全体に収まるように表示 */
     }
 
-    /* SP */
-    @media screen and(max-width:767px) {
-        .onayami--inner .onayami--back img {
-            background-size: auto;
-        }
+}
+
+@media screen and(max-width:767px) {
+    .how {
+        background-size: contain;
+        /* 縦横比を維持しながら全体に収まるように表示 */
     }
 
+}
 
+/* グラムニスタ　とは */
+.how--logo {
+    position: absolute;
+    top: 5%;
+}
 
-    .onayami--inner .onayami--logo {
-        position: absolute;
-        top: 10%;
-        left: 43%;
-    }
-
-    /* オレンジの雲 */
-    .motion2 {
-        position: absolute;
-        left: 30px;
-        top: 30px;
-    }
-
-    /* ピンクの雲 */
-    .motion3 {
-        position: absolute;
-        right: 80px;
-        top: 30px;
-    }
-
-    /* ブルーの雲 */
-    .motion4 {
-        position: absolute;
-        left: 20%;
-        top: 40%;
-    }
-
-    .hukidashi--1 {
-        position: absolute;
-        top: 30%;
-        left: 30%;
-    }
-
-    .hukidashi--2 {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-    }
-
-    .hukidashi--3 {
-        position: absolute;
-        top: 30%;
-        right: 3%;
-    }
-
-    .hukidashi--4 {
-        position: absolute;
-        top: 40%;
-        left: 30%;
-    }
-
-    .hukidashi--5 {
-        position: absolute;
-        top: 45%;
-        left: 55%;
-    }
-
-    .hukidashi--6 {
-        position: absolute;
-        top: 45%;
-        right: 5%;
-    }
-
-    .hukidashi--7 {
-        position: absolute;
-        bottom: 40%;
-        left: 30%;
-    }
-
-    .hukidashi--8 {
-        position: absolute;
-        bottom: 40%;
-        left: 50%;
-    }
-
-    .hukidashi--9 {
-        position: absolute;
-        bottom: 35%;
-        right: 10%;
-    }
-
-    .omakase {
-        position: absolute;
-        bottom: 5%;
-        left: 40%;
-    }
-
-    .denkyu {
-        position: absolute;
-        bottom: 10%;
-        right: 10%;
-    }
-
-    .onayami--person {
-        position: absolute;
-        bottom: 15%;
-        left: 25%;
-        width: 1000px;
-        height: auto;
-    }
-
-    /* 雲 */
-    .motion5 {
-        position: absolute;
-        bottom: 25%;
-        left: 30%;
-        width: 1100px;
-        height: auto;
-    }
-
-    /* メイン　１　ここまで */
-
-    /* メイン２ ここから */
-    /* ------------------------------------------------------------------*/
-
-    /* ピンク　背景 */
-    .main--2 {
-        background-color: rgb(255, 229, 233);
-    }
-
-    /* 背景　画像 */
-    .main--back2 {
-        position: relative;
-        width: auto;
-    }
-
-    /* グラムニスタ　とは */
+@media screen and(min-width:768px) {
     .how--logo {
-        position: absolute;
-        top: 20%;
+        align-items: center;
+        /*  中央配置 */
     }
+}
 
-    /* メイン2 ここまで */
-
-    /* フッター ここから*/
-    /* ---------------------------------------------------------------- */
-    footer {
-        color: darkblue;
-        background: gainsboro;
-
+@media screen and(max-width:767px) {
+    .how--logo {
+        align-items: center;
     }
+}
 
-    /* h1 会社概要 */
-    .footer_title {
-
-        text-align: center;
-        padding: 60px;
-
-
-    }
-
-    /* グレー枠　概要タイトル&内容Ï */
-    .container {
-        margin: auto;
-        display: flex;
-    }
+.how--box {
+    top: 10%;
+    width: 1100px;
+    height: 1300px;
+    position: absolute;
+    padding: 10px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 10px rgba(0, 0, 0, 0.25);
 
 
-    /* グレー枠　概要タイトル */
-    .box {
-        font-family: 'M PLUS Rounded 1c', sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: left;
-        line-height: 60px;
-        margin: auto;
-        padding-bottom: 5%;
+}
 
-    }
+/* @media screen and (min-width:768px) {
+    .how--box {}
+}
 
-    /* グレー枠　概要内容 */
-    .box2 {
-        font-family: 'M PLUS Rounded 1c', sans-serif;
-        text-align: left;
-        line-height: 60px;
-        margin: auto;
-        padding-bottom: 5%;
+@media screen and (max-width:767px) {
+    .how--box {}
+} */
 
-    }
+.how--box2 {
 
-    /* 青枠フッター */
-    #footer_under {
-        text-align: center;
-        font-size: 1.5rem;
-        line-height: 70px;
-        padding: 20px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: aliceblue;
-        background: rgb(103, 103, 196);
-    }
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    display: inline-block;
+    background: gainsboro;
+    border-radius: 20px;
+}
+
+/* @media screen and (min-width:768px) {
+    .how--box2 {}
+}
+
+@media screen and (max-width:767px) {
+    .how--box2 {}
+} */
+
+/* メイン2 ここまで */
+
+/* メイン３　ここから */
+/* ----------------------------------------------------------------------- */
+.step1 {
+    background: white;
+
+}
+
+.step1--box {
+    background: rgb(228, 37, 101);
+}
+
+.about--step1 {
+    /* step1画像 */
+    width: 35%;
+    height: auto;
+    margin: auto;
+    padding: 80px;
+    display: block;
+}
+
+
+.sideline {
+    position: relative;
+}
+
+.sideline--l {
+    /* サイドライン左 */
+    position: absolute;
+}
+
+.sideline--r {
+    /*  サイドライン右 */
+    position: absolute;
+    right: 0;
+}
+
+.crown {
+    padding-top: 5%;
+    display: flex;
+    align-items: flex-end;
+    /* 子要素の高さを指定 */
+    justify-content: center;
+    /* 中央配置 */
+
+}
+
+.crown img {
+    margin-right: 30px;
+}
+
+.crown p {
+    font-size: 2rem;
+    color: black;
+}
+
+/* .action {
+
+} */
+
+/* ------------------------------------------------------------------------------- */
+
+.flags {
+    height: 2000px;
+    background-color: rgb(231, 231, 231);
+}
+
+.profile {
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    background-position: 50% 50%;
+    /* 画像中央を起点に表示 */
+    background-size: contain;
+    /* 縦横比を維持しながら全体に収まるように表示 */
+    /* background: no-repeat; */
+    background-image:url(../images/inkbg.png) ;     /* 背景画像 */
+}
+
+.profile--flag {
+    position: absolute;
+}
+
+.actions {
+    background-color: white;
+}
+
+/* メイン5　ここから */
+/* -------------------------------------------------------------------- */
+
+.step--2{
+    height: 2000px;
+    background-color: white;
+}
+
+.about--support{
+    height:300px;
+    background-color: rgb(255, 81, 110);
+}
+
+
+
+
+
+
+
+
+/* フッター ここから*/
+/* ---------------------------------------------------------------- */
+footer {
+    color: darkblue;
+    background: gainsboro;
+
+}
+
+/* h1 会社概要 */
+.footer_title {
+
+    text-align: center;
+    padding: 60px;
+
+
+}
+
+/* グレー枠　概要タイトル&内容Ï */
+.container {
+    margin: auto;
+    display: flex;
+}
+
+
+/* グレー枠　概要タイトル */
+.box {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 60px;
+    margin: auto;
+    padding-bottom: 5%;
+
+}
+
+/* グレー枠　概要内容 */
+.box2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: left;
+    line-height: 60px;
+    margin: auto;
+    padding-bottom: 5%;
+
+}
+
+/* 青枠フッター */
+#footer_under {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 70px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    background: rgb(103, 103, 196);
 }
