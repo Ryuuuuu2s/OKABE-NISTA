@@ -520,14 +520,14 @@ body {
 /* PC */
 @media screen and (min-width:768px) {
     .icon2 {
-        padding-left: 85%;
+        margin-left: auto;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .icon2 {
-        padding-left: 85%;
+        margin-left: auto;
     }
 }
 
@@ -572,6 +572,7 @@ body {
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .onayami {
     background-color: white;
+    position: relative;
     background-image: url(../images/detailbg.png);
     /* 背景画像 */
     background-position: 50% 50%;
@@ -591,7 +592,7 @@ body {
 @media screen and (max-width:767px) {
     .onayami {
         background-size: cover;
-        /* 縦横比を維持しながら全体に収まるように表示 */
+
     }
 
 }
@@ -604,7 +605,7 @@ body {
 @media screen and (min-width:768px) {
     .onayami--logo {
         width: 718px;
-        padding-top: 150px;
+        padding-top: 100px;
 
     }
 
@@ -614,7 +615,7 @@ body {
 @media screen and (max-width:767px) {
     .onayami--logo {
         width: 500px;
-        padding-top: 200px;
+        padding-top: 100px;
     }
 
 }
@@ -623,6 +624,7 @@ body {
     display: block;
 }
 
+/* SP */
 @media screen and (max-width:767px) {
     .onayami--logo img {
         width: 500px;
@@ -639,81 +641,169 @@ body {
 /* オレンジの雲 */
 .motion2 {
     position: absolute;
-    left: 30px;
-    top: 30px;
+
 }
+
+/* PC */
+@media screen and (min-width:768px) {
+    .motion2 {
+        width: 250px;
+        height: auto;
+        left: 30px;
+        top: 50px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .motion2 {
+        width: 150px;
+        height: auto;
+        top: 30px;
+        left: 25px;
+    }
+}
+
 
 /* ピンクの雲 */
 .motion3 {
     position: absolute;
-    right: 80px;
-    top: 30px;
+
 }
+
+/* PC */
+@media screen and (min-width:768px) {
+    .motion3 {
+        width: 350px;
+        height: auto;
+        right: 60px;
+        top: 50px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .motion3 {
+        width: 200px;
+        height: auto;
+        right: 30px;
+        top: 20px;
+    }
+}
+
 
 /* ブルーの雲 */
 .motion4 {
     position: absolute;
-    left: 20%;
-    top: 40%;
 }
+
+/* PC */
+@media screen and (min-width:768px) {
+    .motion4 {
+        width: 200px;
+        height: auto;
+        left: 200px;
+        top: 400px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .motion4 {
+        width: 130px;
+        height: auto;
+        left: 40px;
+        top: 300px;
+    }
+}
+
+
 
 .hukidashi--all {
     padding-top: 100px;
     padding-bottom: 800px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
 }
 
-.hukidashi--1 {
+
+.hukidashi1 {
     position: absolute;
-    top: 30%;
-    left: 30%;
+    display: flex;
+    /* justify-content: center; */
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi1 {
+        top: 100px;
+        width: 700px;
+        height: auto;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi1 {
+        top: 100px;
+        width: 800px;
+        height: auto;
+    }
+}
+
+
+
+.hukidashi--1 {
+    width: 100%;
+    height: 100%;
+
 }
 
 .hukidashi--2 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .hukidashi--3 {
-    position: absolute;
-    top: 30%;
-    right: 3%;
+    width: 100%;
+    height: 100%;
 }
 
-.hukidashi--4 {
+
+.hukidashi2 {
     position: absolute;
-    top: 40%;
-    left: 30%;
+    display: flex;
 }
 
-.hukidashi--5 {
+.hukidashi--4 {}
+
+.hukidashi--5 {}
+
+.hukidashi--6 {}
+
+.hukidashi3 {
     position: absolute;
-    top: 45%;
-    left: 55%;
+    display: flex;
 }
 
-.hukidashi--6 {
-    position: absolute;
-    top: 45%;
-    right: 5%;
-}
 
 .hukidashi--7 {
-    position: absolute;
+
     bottom: 40%;
     left: 30%;
 }
 
 .hukidashi--8 {
-    position: absolute;
+
     bottom: 40%;
     left: 50%;
 }
 
 .hukidashi--9 {
-    position: absolute;
+
     bottom: 35%;
     right: 10%;
 }
@@ -728,33 +818,32 @@ body {
 @media screen and (min-width:768px) {
     .onayami--person {
         width: 1000px;
-        left: 40px;
-        top: 300px;
+        left: 120px;
+        top: 500px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .onayami--person {
-        top: 700px;
+        top: 400px;
+        left: 30px;
         width: 600px;
 
     }
 }
 
 
-
-
 .omakase {
     position: relative;
-    margin: 0 auto;
 
 }
 
 /* PC */
 @media screen and (min-width:768px) {
     .onmakase {
-        width: 434px;
+        width: 800px;
+        height: auto;
 
     }
 }
@@ -762,59 +851,89 @@ body {
 /* SP */
 @media screen and (max-width:767px) {
     .omakase {
-        width: 400px;
-
-    }
-}
-
-
-.omakase--logo img {
-    display: block;
-}
-
-
-/* SP */
-@media screen and (max-width:767px) {
-    .omakase--logo img {
-        width: 400px;
+        width: 600px;
         height: auto;
     }
 }
 
+.omakase--logo {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
 
-.denkyu img {
-    display: block;
+}
+
+
+/* PC 
+@media screen and (min-width:768px) {
+    .omakase--logo {
+        object-fit: contain;
+        object-position: center;
+    }
+} */
+
+/* SP
+@media screen and (max-width:767px) {
+    .omakase--logo {
+        object-fit: contain;
+        object-position: center;
+    }
+} */
+
+.denkyu {
     position: absolute;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .denkyu img {
-        top: 0;
-
+    .denkyu {
+        width: 150px;
+        height: auto;
+        top: 5px;
+        right: 110px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    .denkyu img {
-        top: 0;
+    .denkyu {
+        width: 50px;
+        height: auto;
+        top: 5px;
+        right: 60px;
     }
 }
 
 /* 雲 */
 .motion5 {
     position: absolute;
-    bottom: 25%;
-    left: 30%;
-    width: 1100px;
-    height: auto;
 }
+
+/* PC */
+@media screen and (min-width:768px) {
+    .motion5 {
+        width: 1100px;
+        height: auto;
+        bottom: 100px;
+        left: 150px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .motion5 {
+        width: 750px;
+        height: auto;
+        bottom: 200px;
+    }
+}
+
 
 /* メイン　１　ここまで */
 
 /* メイン２ ここから */
-/* ------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------*/
 
 /* ピンク　背景 */
 .how {
@@ -906,7 +1025,7 @@ body {
 /* メイン2 ここまで */
 
 /* メイン３　ここから */
-/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
 .step1 {
     background: white;
 
@@ -964,7 +1083,7 @@ body {
 
 } */
 
-/* ------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
 
 .flags {
     height: 2000px;
@@ -994,7 +1113,7 @@ body {
 }
 
 /* メイン5　ここから */
-/* -------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
 
 .step--2 {
     height: 2000px;
@@ -1014,7 +1133,7 @@ body {
 
 
 /* フッター ここから*/
-/* ---------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
 footer {
     color: darkblue;
     background: gainsboro;
