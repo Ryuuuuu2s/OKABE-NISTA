@@ -171,6 +171,7 @@ body {
     }
 }
 
+
 /* PC */
 @media screen and (min-width: 768px) {
     .herotitle {
@@ -490,16 +491,16 @@ body {
 }
 
 /* PC */
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .comment {
-        padding: 10px 20px;
+        padding: 15px;
     }
 }
 
 /* SP */
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
     .comment {
-        padding: 10px;
+        padding: 20px;
     }
 }
 
@@ -509,11 +510,32 @@ body {
     display: flex;
 }
 
+
+
+/* ブクマ */
+.icon2 {
+    background-color: white;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .icon2 {
+        padding-left: 85%;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .icon2 {
+        padding-left: 85%;
+    }
+}
+
 /* 顔のアイコン */
 .goodicon {
     display: flex;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 /* いいね! */
@@ -524,17 +546,25 @@ body {
 
 .messages {
     display: flex;
+    padding-bottom: 20px;
 }
 
 .KV--words h4 {
     font-weight: bold;
+    padding-right: 20px;
 }
 
 /* ハッシュタグ */
-.hashtug p {
-    font-size: 12px;
-    color: blue;
+.hashtug {
+    display: flex;
+    font-size: 15px;
+    color: rgb(53, 53, 156);
+    gap: 15px;
 }
+
+/* .hushtug p{
+    padding:10px;
+} */
 
 /* KV2 ここまで */
 
@@ -546,52 +576,65 @@ body {
     /* 背景画像 */
     background-position: 50% 50%;
     /* 画像中央を起点に表示 */
-    height: 2000px;
-    position: relative;
 }
 
 /* PC */
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .onayami {
-        background-size: contain;
+        background-size: cover;
         /* 縦横比を維持しながら全体に収まるように表示 */
+
     }
 }
 
 /* SP */
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
     .onayami {
-        background-size: contain;
+        background-size: cover;
         /* 縦横比を維持しながら全体に収まるように表示 */
     }
 
 }
 
 .onayami--logo {
-    top: 6%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 /* PC */
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .onayami--logo {
-        width: 60%;
+        width: 718px;
+        padding-top: 150px;
 
     }
 
 }
 
 /* SP */
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
     .onayami--logo {
-        width: 60%;
+        width: 500px;
+        padding-top: 200px;
     }
 
 }
 
+.onayami--logo img {
+    display: block;
+}
 
+@media screen and (max-width:767px) {
+    .onayami--logo img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+
+
+/* .cloud{
+    
+} */
 
 /* オレンジの雲 */
 .motion2 {
@@ -612,6 +655,13 @@ body {
     position: absolute;
     left: 20%;
     top: 40%;
+}
+
+.hukidashi--all {
+    padding-top: 100px;
+    padding-bottom: 800px;
+    position: relative;
+
 }
 
 .hukidashi--1 {
@@ -668,24 +718,88 @@ body {
     right: 10%;
 }
 
-.omakase {
-    position: absolute;
-    bottom: 5%;
-    left: 40%;
-}
 
-.denkyu {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
 
 .onayami--person {
     position: absolute;
-    bottom: 15%;
-    left: 25%;
-    width: 1000px;
-    height: auto;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .onayami--person {
+        width: 1000px;
+        left: 40px;
+        top: 300px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .onayami--person {
+        top: 700px;
+        width: 600px;
+
+    }
+}
+
+
+
+
+.omakase {
+    position: relative;
+    margin: 0 auto;
+
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .onmakase {
+        width: 434px;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .omakase {
+        width: 400px;
+
+    }
+}
+
+
+.omakase--logo img {
+    display: block;
+}
+
+
+/* SP */
+@media screen and (max-width:767px) {
+    .omakase--logo img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+
+.denkyu img {
+    display: block;
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .denkyu img {
+        top: 0;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .denkyu img {
+        top: 0;
+    }
 }
 
 /* 雲 */
@@ -715,7 +829,7 @@ body {
 }
 
 /* PC */
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .how {
         background-size: contain;
         /* 縦横比を維持しながら全体に収まるように表示 */
@@ -723,7 +837,7 @@ body {
 
 }
 
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
     .how {
         background-size: contain;
         /* 縦横比を維持しながら全体に収まるように表示 */
@@ -737,14 +851,14 @@ body {
     top: 5%;
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
     .how--logo {
         align-items: center;
         /*  中央配置 */
     }
 }
 
-@media screen and(max-width:767px) {
+@media screen and (max-width:767px) {
     .how--logo {
         align-items: center;
     }
@@ -867,7 +981,8 @@ body {
     background-size: contain;
     /* 縦横比を維持しながら全体に収まるように表示 */
     /* background: no-repeat; */
-    background-image:url(../images/inkbg.png) ;     /* 背景画像 */
+    background-image: url(../images/inkbg.png);
+    /* 背景画像 */
 }
 
 .profile--flag {
@@ -881,13 +996,13 @@ body {
 /* メイン5　ここから */
 /* -------------------------------------------------------------------- */
 
-.step--2{
+.step--2 {
     height: 2000px;
     background-color: white;
 }
 
-.about--support{
-    height:300px;
+.about--support {
+    height: 300px;
     background-color: rgb(255, 81, 110);
 }
 
