@@ -584,6 +584,7 @@ body {
     .onayami {
         background-size: cover;
         /* 縦横比を維持しながら全体に収まるように表示 */
+        padding-top: 100px;
 
     }
 }
@@ -592,7 +593,7 @@ body {
 @media screen and (max-width:767px) {
     .onayami {
         background-size: cover;
-
+padding-top: 80px;
     }
 
 }
@@ -605,8 +606,6 @@ body {
 @media screen and (min-width:768px) {
     .onayami--logo {
         width: 718px;
-        padding-top: 100px;
-
     }
 
 }
@@ -615,7 +614,7 @@ body {
 @media screen and (max-width:767px) {
     .onayami--logo {
         width: 500px;
-        padding-top: 100px;
+        
     }
 
 }
@@ -719,15 +718,20 @@ body {
 /* PC */
 @media screen and (min-width:768px) {
     .hukidashi--all {
-        height: 900px;
-        left: 50px;
+        width: 900px;
+        height: 800px;
+        margin: 0 auto;
+        margin-bottom: 80px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .hukidashi--all {
-        height: 700px;
+        width: 700px;
+        height: 600px;
+        margin: 0 auto;
+        margin-bottom: 100px;
     }
 
 }
@@ -952,18 +956,17 @@ body {
 @media screen and (min-width:768px) {
     .onayami--person {
         width: 800px;
-        left: 120px;
-        top: 700px;
+        margin: 0 auto;
+      
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .onayami--person {
-        top: 40px;
-        left: 70px;
         width: 600px;
-
+        margin: 0 auto;
+          margin-bottom: 50px;
     }
 }
 
@@ -974,15 +977,15 @@ body {
 }
 
 /* PC */
-@media screen and (min-width:768px){
-    .motion5{
+@media screen and (min-width:768px) {
+    .motion5 {
         padding-bottom: 300px;
     }
 }
 
 /* SP */
-@media screen and (max-width:767px){
-    .motion5{
+@media screen and (max-width:767px) {
+    .motion5 {
         padding-bottom: 100px;
     }
 }
@@ -990,6 +993,7 @@ body {
 
 .omakase {
     position: relative;
+    margin: 0 auto;
 
 }
 
@@ -998,7 +1002,7 @@ body {
     .omakase {
         width: 750px;
         height: 400px;
-        padding-bottom: 150px;
+
     }
 }
 
@@ -1007,7 +1011,6 @@ body {
     .omakase {
         width: 500px;
         height: 250px;
-        padding-bottom: 50px;
     }
 }
 
@@ -1104,7 +1107,8 @@ body {
 /* PC */
 @media screen and (min-width:768px) {
     .how--logo {
-        padding-top: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -1125,37 +1129,130 @@ body {
 
 /* PC */
 @media screen and (min-width:768px) {
-    .how--box {
-        height: 1000px;
-        padding-top: 100px;
-        padding-bottom: 100px;
+    .how--box {}
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .how--box {}
+}
+
+.how--box2 {
+    position: absolute;
+    display: inline-block;
+    background: gainsboro;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .how--box2 {
+        width: 400px;
+        height: 300px;
+
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    .how--box {
-        padding-top: 50px;
-        padding-bottom: 50px;
+    .how--box2 {
+        width: 400px;
+        height: 300px;
+
     }
 }
 
-.how--box2 {
-    width: 400px;
-    height: 300px;
+
+.peple {
     position: absolute;
-    display: inline-block;
-    background: gainsboro;
-    border-radius: 20px;
 }
 
-/* @media screen and (min-width:768px) {
-    .how--box2 {}
+/* PC */
+@media screen and (min-width:768px) {
+    .peple {
+        width: 230px;
+        height: auto;
+    }
 }
 
+/* SP */
 @media screen and (max-width:767px) {
-    .how--box2 {}
-} */
+    .peple {
+        width: 200px;
+        height: auto;
+        left: 10px;
+        bottom: 40px;
+    }
+}
+
+.follwme {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .follwme {
+        width: 150px;
+        height: auto;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .follwme {
+        width: 150px;
+        height: auto;
+        left: 200px;
+        bottom: 90px;
+    }
+}
+
+.sumaho {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .sumaho {
+        width: 200px;
+        height: auto;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .sumaho {
+        width: 200px;
+        height: auto;
+        bottom: 20px;
+    }
+}
+
+.post {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .post {
+        width: 100px;
+        height: auto;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .post {
+        width: 100px;
+        height: auto;
+        left: 200px;
+        bottom: 50px;
+    }
+}
+
 
 /* メイン2 ここまで */
 
