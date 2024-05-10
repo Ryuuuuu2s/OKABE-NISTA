@@ -593,7 +593,7 @@ body {
 @media screen and (max-width:767px) {
     .onayami {
         background-size: cover;
-padding-top: 80px;
+        padding-top: 80px;
     }
 
 }
@@ -614,7 +614,7 @@ padding-top: 80px;
 @media screen and (max-width:767px) {
     .onayami--logo {
         width: 500px;
-        
+
     }
 
 }
@@ -746,7 +746,7 @@ padding-top: 80px;
         width: 250px;
         height: auto;
         top: 250px;
-        left: 300px;
+        left: 0;
     }
 }
 
@@ -770,7 +770,7 @@ padding-top: 80px;
         width: 250px;
         height: auto;
         top: 200px;
-        left: 550px;
+        right: 350px;
     }
 }
 
@@ -794,7 +794,7 @@ padding-top: 80px;
         width: 250px;
         height: auto;
         top: 250px;
-        left: 800px;
+        right: 20px;
     }
 }
 
@@ -817,8 +817,8 @@ padding-top: 80px;
     .hukidashi--4 {
         width: 250px;
         height: auto;
-        top: 400px;
-        left: 250px;
+        top: 450px;
+        left: 0;
     }
 }
 
@@ -842,7 +842,7 @@ padding-top: 80px;
         width: 250px;
         height: auto;
         top: 450px;
-        left: 550px;
+        left: 300px;
     }
 }
 
@@ -863,10 +863,10 @@ padding-top: 80px;
 /* PC */
 @media screen and (min-width:768px) {
     .hukidashi--6 {
-        width: 300px;
+        width: 250px;
         height: auto;
         top: 500px;
-        left: 800px;
+        right: 0;
     }
 }
 
@@ -889,8 +889,8 @@ padding-top: 80px;
     .hukidashi--7 {
         width: 250px;
         height: auto;
-        top: 600px;
-        left: 250px;
+        top: 700px;
+        left: 0;
     }
 }
 
@@ -913,8 +913,8 @@ padding-top: 80px;
     .hukidashi--8 {
         width: 250px;
         height: auto;
-        top: 700px;
-        left: 550px;
+        top: 750px;
+        right: 350px;
     }
 }
 
@@ -935,10 +935,10 @@ padding-top: 80px;
 /* PC */
 @media screen and (min-width:768px) {
     .hukidashi--9 {
-        width: 150px;
+        width: 130px;
         height: auto;
         top: 700px;
-        left: 850px;
+        right: 150px;
     }
 }
 
@@ -957,7 +957,7 @@ padding-top: 80px;
     .onayami--person {
         width: 800px;
         margin: 0 auto;
-      
+
     }
 }
 
@@ -966,7 +966,7 @@ padding-top: 80px;
     .onayami--person {
         width: 600px;
         margin: 0 auto;
-          margin-bottom: 50px;
+        margin-bottom: 50px;
     }
 }
 
@@ -1090,12 +1090,15 @@ padding-top: 80px;
 @media screen and (min-width:768px) {
     .how {
         background-size: cover;
+        padding-top: 100px;
     }
 }
 
+/* SP */
 @media screen and (max-width:767px) {
     .how {
         background-size: cover;
+        padding-top: 100px;
     }
 }
 
@@ -1107,15 +1110,14 @@ padding-top: 80px;
 /* PC */
 @media screen and (min-width:768px) {
     .how--logo {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .how--logo {
-        padding-top: 100px;
+        padding-bottom: 50px;
     }
 }
 
@@ -1129,20 +1131,100 @@ padding-top: 80px;
 
 /* PC */
 @media screen and (min-width:768px) {
-    .how--box {}
+    .how--box {
+        width: 1100px;
+        margin: 0 auto;
+
+    }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    .how--box {}
+    .how--box {
+        width: 550px;
+        margin: 0 auto;
+
+    }
 }
+
+.service {
+    text-align: center;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .service {
+        font-size: 25px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .service {
+        font-size: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.yelowline1 img {
+    margin: 0 auto;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .yelowline1 img {
+        width: 400px;
+        height: 20px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .yelowline1 img {
+        width: 330px;
+        height: 10px;
+    }
+}
+
+
+.yelowline2 img {
+    margin: 0 auto;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .yelowline2 img {
+        width: 350px;
+        height: 20px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .yelowline2 img {
+        width: 260px;
+        height: 10px;
+    }
+}
+
+
+
+
+.number_two{
+    position: absolute;
+}
+
 
 .how--box2 {
-    position: absolute;
+    position: relative;
     display: inline-block;
-    background: gainsboro;
+    background: rgb(245, 245, 245);
     border-radius: 20px;
     position: relative;
+
 }
 
 /* PC */
@@ -1159,18 +1241,59 @@ padding-top: 80px;
     .how--box2 {
         width: 400px;
         height: 300px;
-
     }
 }
 
 
-.peple {
+.number_one {
     position: absolute;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .peple {
+    .number_one {
+        width: 90px;
+        height: auto;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .number_one{
+        width: 70px;
+        height: auto;
+       
+    }
+}
+
+.number_two{
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px){
+    .number_two{
+        width: 90px;
+        height: auto;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .number_two{
+        width: 70px;
+        height: auto;
+    }
+}
+
+
+.peple3 {
+    /* position: absolute; */
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .peple3 {
         width: 230px;
         height: auto;
     }
@@ -1178,7 +1301,7 @@ padding-top: 80px;
 
 /* SP */
 @media screen and (max-width:767px) {
-    .peple {
+    .peple3 {
         width: 200px;
         height: auto;
         left: 10px;
@@ -1187,7 +1310,7 @@ padding-top: 80px;
 }
 
 .follwme {
-    position: absolute;
+    /* position: absolute; */
 }
 
 /* PC */
@@ -1209,7 +1332,7 @@ padding-top: 80px;
 }
 
 .sumaho {
-    position: absolute;
+    /* position: absolute; */
 }
 
 /* PC */
@@ -1231,7 +1354,7 @@ padding-top: 80px;
 }
 
 .post {
-    position: absolute;
+    /* position: absolute; */
 }
 
 /* PC */
@@ -1252,6 +1375,53 @@ padding-top: 80px;
         bottom: 50px;
     }
 }
+
+.peple--wow {
+    position: relative;
+}
+
+.peple {
+    margin: 0 auto;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .peple {
+        width: 1100px;
+        height: auto;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .peple {
+        width: 550px;
+        height: auto;
+    }
+}
+
+.wow {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .wow {
+        top: 200px;
+        right: 250px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .wow {
+        width: 150px;
+        height: auto;
+        top: 100px;
+        right: 120px;
+    }
+}
+
 
 
 /* メイン2 ここまで */
