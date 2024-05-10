@@ -632,12 +632,6 @@ body {
     }
 }
 
-
-
-/* .cloud{
-    
-} */
-
 /* オレンジの雲 */
 .motion2 {
     position: absolute;
@@ -718,118 +712,278 @@ body {
 }
 
 
-
 .hukidashi--all {
-    padding-top: 100px;
-    padding-bottom: 800px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-}
-
-
-.hukidashi1 {
-    position: absolute;
-    display: flex;
-    /* justify-content: center; */
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .hukidashi1 {
-        top: 100px;
-        width: 700px;
-        height: auto;
+    .hukidashi--all {
+        height: 900px;
+        left: 50px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    .hukidashi1 {
-        top: 100px;
-        width: 800px;
+    .hukidashi--all {
+        height: 700px;
+    }
+
+}
+
+.hukidashi--1 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi--1 {
+        width: 250px;
         height: auto;
+        top: 250px;
+        left: 300px;
     }
 }
 
-
-
-.hukidashi--1 {
-    width: 100%;
-    height: 100%;
-
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--1 {
+        width: 200px;
+        height: auto;
+        top: 200px;
+        left: 50px;
+    }
 }
 
 .hukidashi--2 {
-    width: 100%;
-    height: 100%;
-}
-
-.hukidashi--3 {
-    width: 100%;
-    height: 100%;
-}
-
-
-.hukidashi2 {
-    position: absolute;
-    display: flex;
-}
-
-.hukidashi--4 {}
-
-.hukidashi--5 {}
-
-.hukidashi--6 {}
-
-.hukidashi3 {
-    position: absolute;
-    display: flex;
-}
-
-
-.hukidashi--7 {
-
-    bottom: 40%;
-    left: 30%;
-}
-
-.hukidashi--8 {
-
-    bottom: 40%;
-    left: 50%;
-}
-
-.hukidashi--9 {
-
-    bottom: 35%;
-    right: 10%;
-}
-
-
-
-.onayami--person {
     position: absolute;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .onayami--person {
-        width: 1000px;
-        left: 120px;
+    .hukidashi--2 {
+        width: 250px;
+        height: auto;
+        top: 200px;
+        left: 550px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--2 {
+        width: 200px;
+        height: auto;
+        top: 200px;
+        left: 250px;
+    }
+}
+
+.hukidashi--3 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi--3 {
+        width: 250px;
+        height: auto;
+        top: 250px;
+        left: 800px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--3 {
+        width: 200px;
+        height: auto;
+        top: 200px;
+        left: 450px;
+    }
+}
+
+.hukidashi--4 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi--4 {
+        width: 250px;
+        height: auto;
+        top: 400px;
+        left: 250px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--4 {
+        width: 200px;
+        height: auto;
+        top: 350px;
+        left: 30px;
+    }
+}
+
+.hukidashi--5 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi--5 {
+        width: 250px;
+        height: auto;
+        top: 450px;
+        left: 550px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--5 {
+        width: 200px;
+        height: auto;
+        top: 400px;
+        left: 250px;
+    }
+}
+
+.hukidashi--6 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi--6 {
+        width: 300px;
+        height: auto;
         top: 500px;
+        left: 800px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--6 {
+        width: 200px;
+        height: auto;
+        top: 450px;
+        left: 450px;
+    }
+}
+
+.hukidashi--7 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi--7 {
+        width: 250px;
+        height: auto;
+        top: 600px;
+        left: 250px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--7 {
+        width: 200px;
+        height: auto;
+        top: 550px;
+        left: 60px;
+    }
+}
+
+.hukidashi--8 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi--8 {
+        width: 250px;
+        height: auto;
+        top: 700px;
+        left: 550px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--8 {
+        width: 200px;
+        height: auto;
+        top: 650px;
+        left: 280px;
+    }
+}
+
+.hukidashi--9 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .hukidashi--9 {
+        width: 150px;
+        height: auto;
+        top: 700px;
+        left: 850px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .hukidashi--9 {
+        width: 100px;
+        height: auto;
+        top: 600px;
+        left: 500px;
+    }
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .onayami--person {
+        width: 800px;
+        left: 120px;
+        top: 700px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .onayami--person {
-        top: 400px;
-        left: 30px;
+        top: 40px;
+        left: 70px;
         width: 600px;
 
+    }
+}
+
+
+/* 雲 */
+.motion5 {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px){
+    .motion5{
+        padding-bottom: 300px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px){
+    .motion5{
+        padding-bottom: 100px;
     }
 }
 
@@ -841,18 +995,19 @@ body {
 
 /* PC */
 @media screen and (min-width:768px) {
-    .onmakase {
-        width: 800px;
-        height: auto;
-
+    .omakase {
+        width: 750px;
+        height: 400px;
+        padding-bottom: 150px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .omakase {
-        width: 600px;
-        height: auto;
+        width: 500px;
+        height: 250px;
+        padding-bottom: 50px;
     }
 }
 
@@ -865,33 +1020,18 @@ body {
 }
 
 
-/* PC 
-@media screen and (min-width:768px) {
-    .omakase--logo {
-        object-fit: contain;
-        object-position: center;
-    }
-} */
-
-/* SP
-@media screen and (max-width:767px) {
-    .omakase--logo {
-        object-fit: contain;
-        object-position: center;
-    }
-} */
-
 .denkyu {
     position: absolute;
 }
 
+
 /* PC */
 @media screen and (min-width:768px) {
     .denkyu {
-        width: 150px;
+        width: 80px;
         height: auto;
         top: 5px;
-        right: 110px;
+        right: 120px;
     }
 }
 
@@ -905,10 +1045,9 @@ body {
     }
 }
 
-/* 雲 */
-.motion5 {
-    position: absolute;
-}
+
+
+
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -942,70 +1081,66 @@ body {
     /* 背景画像 */
     background-position: 50% 50%;
     /* 画像中央を起点に表示 */
-    height: 2000px;
-    position: relative;
-
 }
 
 /* PC */
 @media screen and (min-width:768px) {
     .how {
-        background-size: contain;
-        /* 縦横比を維持しながら全体に収まるように表示 */
+        background-size: cover;
     }
-
 }
 
 @media screen and (max-width:767px) {
     .how {
-        background-size: contain;
-        /* 縦横比を維持しながら全体に収まるように表示 */
+        background-size: cover;
     }
-
 }
 
 /* グラムニスタ　とは */
 .how--logo {
-    position: absolute;
-    top: 5%;
+    margin: auto;
 }
 
+/* PC */
 @media screen and (min-width:768px) {
     .how--logo {
-        align-items: center;
-        /*  中央配置 */
+        padding-top: 150px;
     }
 }
 
+/* SP */
 @media screen and (max-width:767px) {
     .how--logo {
-        align-items: center;
+        padding-top: 100px;
     }
 }
 
 .how--box {
-    top: 10%;
-    width: 1100px;
-    height: 1300px;
-    position: absolute;
-    padding: 10px;
     background: white;
     border-radius: 30px;
-    box-shadow: 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
 
 
 }
 
-/* @media screen and (min-width:768px) {
-    .how--box {}
+/* PC */
+@media screen and (min-width:768px) {
+    .how--box {
+        height: 1000px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
+/* SP */
 @media screen and (max-width:767px) {
-    .how--box {}
-} */
+    .how--box {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
 
 .how--box2 {
-
     width: 400px;
     height: 300px;
     position: absolute;
