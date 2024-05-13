@@ -200,6 +200,7 @@ body {
 .words p {
     font-family: "Yu Gothic Medium", "游ゴシック Medium", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
     line-height: 1.5;
+
 }
 
 /* PC */
@@ -1125,7 +1126,7 @@ body {
     background: white;
     border-radius: 30px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
-
+    /* position: relative; */
 
 }
 
@@ -1210,29 +1211,25 @@ body {
     }
 }
 
-
-
-
-.number_two{
-    position: absolute;
+.box2--wrap {
+    margin: 0 auto;
+    width: 950px;
 }
 
-
 .how--box2 {
-    position: relative;
-    display: inline-block;
     background: rgb(245, 245, 245);
     border-radius: 20px;
     position: relative;
-
+    
 }
 
 /* PC */
 @media screen and (min-width:768px) {
     .how--box2 {
-        width: 400px;
+        width: 450px;
         height: 300px;
-
+        padding: 35px 25px;
+        display: inline-block;
     }
 }
 
@@ -1241,60 +1238,62 @@ body {
     .how--box2 {
         width: 400px;
         height: 300px;
+        padding: 30px 20px;
     }
 }
 
 
-.number_one {
-    position: absolute;
+.how--box2 p {
+    text-align: center;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .number_one {
-        width: 90px;
-        height: auto;
+    .how--box2 p {
+        font-size: 20px;
+        margin-bottom: 30px;
     }
 }
 
 /* SP */
-@media screen and (max-width:767px) {
-    .number_one{
-        width: 70px;
-        height: auto;
-       
+@media screen and (max-width:767px){
+    .how--box2 p{
+        font-size: 18px;
+        margin-bottom: 25px;
     }
 }
 
-.number_two{
-    position: absolute;
+.peple--foll {
+    margin: 0 auto;
+    display: flex;
 }
 
 /* PC */
-@media screen and (min-width:768px){
-    .number_two{
-        width: 90px;
-        height: auto;
+@media screen and (min-width:768px) {
+    .peple--foll {
+        width: 300px;
+        height: 150px;
+
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    .number_two{
-        width: 70px;
-        height: auto;
+    .peple--foll {
+        width: 310px;
+        height: 180px;
+
     }
 }
-
 
 .peple3 {
-    /* position: absolute; */
+    object-fit: contain;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
     .peple3 {
-        width: 230px;
+        width: 200px;
         height: auto;
     }
 }
@@ -1302,7 +1301,7 @@ body {
 /* SP */
 @media screen and (max-width:767px) {
     .peple3 {
-        width: 200px;
+        width: 210px;
         height: auto;
         left: 10px;
         bottom: 40px;
@@ -1310,7 +1309,7 @@ body {
 }
 
 .follwme {
-    /* position: absolute; */
+    object-fit: contain;
 }
 
 /* PC */
@@ -1324,15 +1323,36 @@ body {
 /* SP */
 @media screen and (max-width:767px) {
     .follwme {
-        width: 150px;
+        width: 100px;
         height: auto;
-        left: 200px;
-        bottom: 90px;
+        /* left: 200px;
+        bottom: 90px; */
+    }
+}
+
+.sumaho--post {
+    margin: 0 auto;
+    display: flex;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .sumaho--post {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .sumaho--post {
+        width: 300px;
+        height: 200px;
     }
 }
 
 .sumaho {
-    /* position: absolute; */
+    object-fit: contain;
 }
 
 /* PC */
@@ -1354,7 +1374,7 @@ body {
 }
 
 .post {
-    /* position: absolute; */
+    object-fit: contain;
 }
 
 /* PC */
@@ -1375,6 +1395,54 @@ body {
         bottom: 50px;
     }
 }
+
+
+.number_one {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .number_one {
+        width: 90px;
+        height: auto;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .number_one {
+        width: 70px;
+        height: auto;
+
+    }
+}
+
+
+
+.number_two {
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .number_two {
+        width: 90px;
+        height: auto;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .number_two {
+        width: 70px;
+        height: auto;
+    }
+}
+
+
+
+
 
 .peple--wow {
     position: relative;
