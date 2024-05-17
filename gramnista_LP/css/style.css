@@ -2514,7 +2514,6 @@ SP
 @media screen and (min-width:768px) {
     .points--box {
         width: 620px;
-        height: 325px;
         flex-wrap: wrap;
         display: flex;
         gap: 15px;
@@ -2526,11 +2525,11 @@ SP
 /* SP */
 @media screen and (max-width:767px) {
     .points--box {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
         width: 300px;
-        height: 665px;
-        /* height: 560px; */
         margin: 0 auto;
-        gap: 15px;
         margin-bottom: 50px;
     }
 }
@@ -2560,6 +2559,7 @@ SP
 
     }
 }
+
 
 .pink--box img {
     object-fit: contain;
@@ -2598,6 +2598,8 @@ SP
 @media screen and (min-width:768px) {
     .actions {
         width: 1100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         margin-top: 100px;
     }
 }
@@ -2607,7 +2609,8 @@ SP
     .actions {
         width: 600px;
         margin-top: 110px;
-
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
@@ -2654,29 +2657,622 @@ SP
     }
 }
 
+.about--ac {
+    text-align: center;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .about--ac {
+        margin-bottom: 80px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .about--ac {
+        margin-bottom: 50px;
+    }
+}
+
+.about--ac p {
+    font-weight: bold;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .about--ac p {
+        font-size: 18px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .about--ac p {
+        font-size: 13px;
+    }
+}
+
+span.pink--line {}
+
+/* PC */
+@media screen and (min-width:768px) {
+    span.pink--line {
+        font-weight: bold;
+        border-bottom: solid;
+        border-width: 5px;
+        border-color: rgb(251, 76, 105);
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    span.pink--line {
+        font-weight: bold;
+        border-bottom: solid;
+        border-width: 5px;
+        border-color: rgb(251, 76, 105);
+    }
+}
+
+.pb--box {
+    margin: 0 auto;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pb--box {
+        width: 1050px;
+        display: flex;
+        gap: 20px
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pb--box {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+
+        width: 400px;
+
+    }
+}
 
 
+.pink--blue {
+    background: linear-gradient(to top, rgb(52, 52, 255), rgb(255, 69, 100));
+    border-radius: 20px;
+    position: relative;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pink--blue {
+        width: 350px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pink--blue {
+        width: 400px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+
+.pb--title {
+    text-align: center;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pb--title {
+        padding-bottom: 10px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pb--title {
+        padding-bottom: 20px;
+    }
+}
+
+
+.pb--title p {
+    color: white;
+
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+
+    .pb--title p {
+        font-size: 20px;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pb--title p {
+        font-size: 25px;
+    }
+}
+
+.pb--denkyu {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pb--denkyu {
+        width: 300px;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pb--denkyu {
+        width: 350px;
+    }
+}
+
+.pb--denkyu p {
+    color: white;
+
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pb--denkyu p {
+        width: 130px;
+        font-size: 15px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pb--denkyu p {
+        font-size: 18px;
+    }
+}
+
+.pb--peple {
+    object-fit: contain;
+
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pb--peple {
+        width: 170px;
+        height: auto;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pb--peple {
+        width: 190px;
+        height: auto;
+    }
+}
+
+.pb--white {
+    background-color: white;
+    margin: 0 auto;
+    /* align-items: center; */
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pb--white {
+        width: 300px;
+        height: 65px;
+        padding: 10px;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pb--white {
+        width: 350px;
+        height: 74px;
+        padding: 10px;
+    }
+}
+
+.pb--white p {
+    color: black;
+
+
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pb--white p {
+        font-size: 15px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pb--white p {
+        font-size: 18px;
+    }
+}
 
 
 /* メイン5　ここから */
 /* ----------------------------------------------------------------------------------------- */
 
 .step--2 {
-    height: 2000px;
-    background-color: white;
+    background: white;
 }
+
+/* PC */
+@media screen and (min-width:768px) {
+    .step--2 {
+        padding-bottom: 50px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .step--2 {
+        padding-bottom: 50px;
+    }
+}
+
+.step2--box {
+    background: rgb(228, 37, 101);
+    position: relative;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .step2--box {
+        margin-bottom: 40px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .step2--box {
+        margin-bottom: 20px;
+    }
+}
+
+.about--step2 {
+    /* step1画像 */
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    /* position: relative; */
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .about--step2 {
+        width: 550px;
+        height: auto;
+        padding: 80px 80px 120px 80px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .about--step2 {
+        width: 500px;
+        height: auto;
+        padding: 80px 80px 130px 80px;
+
+    }
+}
+
+
 
 .about--support {
-    height: 300px;
-    background-color: rgb(255, 81, 110);
+    margin: 0 auto;
+
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .about--support {
+        width: 800px;
+        margin-bottom: 50px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .about--support {
+        /* width: ; */
+        margin-bottom: 35px;
+    }
+}
+
+.about--support p {
+    color: black;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .about--support p {
+        font-size: 20px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .about--support p {
+        font-size: 18px;
+    }
+}
+
+.yellow--line {
+    margin: 0 auto;
+    display: flex;
+
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .yellow--line {
+        width: 530px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .yellow--line {
+        width: 480px;
+    }
 }
 
 
+p.yellowline {}
+
+/* PC */
+@media screen and (min-width:768px) {
+    p.yellowline {
+        width: 190px;
+        font-size: 20px;
+        border-bottom: solid;
+        border-color: yellow;
+        border-width: 10px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    p.yellowline {
+        /* width: 175px; */
+        font-size: 18px;
+        border-bottom: solid;
+        border-color: yellow;
+        border-width: 7px;
+    }
+}
+
+.yellowline p {
+    color: black;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .yellowline p {
+        font-size: 20px;
+        width: 340px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .yellowline p {
+        font-size: 18px;
+        width: ;
+    }
+}
+
+.no--line1 {
+
+    color: black;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .no--line {
+        font-size: 20px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .no--line {
+        font-size: 18px;
+    }
+}
 
 
+.no--line2 {
+    margin: 0 auto;
+
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .no--line2 {
+        font-size: 20px;
+        width: 700px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .no--line2 {
+        font-size: 18px;
+        width: 630px;
+    }
+}
+
+.shitakunaru--5 {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-direction: row
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .shitakunaru--5 {
+        /* width: 1100px; */
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .shitakunaru--5 {
+        /* width: 700px; */
+    }
+}
+
+.shitakunaru {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .shitakunaru {
+        width: 550px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .shitakunaru {
+        width: 350px;
+    }
+}
+
+.number--peple {
+    display: flex;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .number--peple {
+        width: 100px;
+        height: 100px;
+
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .number--peple {}
+}
 
 
+.number--peple p {
+    color: black;
+}
 
+/* PC */
+@media screen and (min-width:768px) {
+    .number--peple p {
+        font-size: 125px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .number--peple p {
+        font-size: 50px;
+    }
+}
+
+.green--peple {
+    object-fit: contain;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .green--peple {
+        width: 80px;
+        height: auto;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .green--peple {
+        width: 80px;
+        height: auto;
+    }
+}
+
+.p--under {
+    object-fit: contain;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .p--under {
+        width: 450px;
+        height: 50px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .p--under {
+        width: 350px;
+        height: auto;
+    }
+}
+
+.p--under p {}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .p--under p {
+        font-size: 20px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .p--under p {
+        font-size: 15px;
+    }
+}
+
+.shitakunaru img {
+    object-fit: contain;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .shitakunaru img {
+        width: 450px;
+    }
+}
 
 /* フッター ここから*/
 /* --------------------------------------------------------------------------------------- */
