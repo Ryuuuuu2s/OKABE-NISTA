@@ -1782,9 +1782,7 @@ SP
 }
 
 
-.yoso {
-    /* position: relative; */
-}
+.yoso {}
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -3084,7 +3082,7 @@ p.yellowline {}
 @media screen and (max-width:767px) {
     .yellowline p {
         font-size: 18px;
-        width: ;
+        width: auto;
     }
 }
 
@@ -3131,23 +3129,21 @@ p.yellowline {}
 
 .shitakunaru--5 {
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-direction: row
+
+
 }
 
 /* PC */
 @media screen and (min-width:768px) {
     .shitakunaru--5 {
-        /* width: 1100px; */
+        width: 1100px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .shitakunaru--5 {
-        /* width: 700px; */
+        width: 700px;
     }
 }
 
@@ -3159,33 +3155,82 @@ p.yellowline {}
 /* PC */
 @media screen and (min-width:768px) {
     .shitakunaru {
-        width: 550px;
+        /* width: 550px; */
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .shitakunaru {
-        width: 350px;
+        /* width: 455px; */
     }
+}
+
+
+.shitakunaru:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .number--peple {
     display: flex;
+    position: relative;
+    align-items: flex-end;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .number--peple {
-        width: 100px;
-        height: 100px;
-
-    }
+    .number--peple {}
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .number--peple {}
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .number--peple:nth-child(odd) {}
+}
+
+.dott--number{
+
+}
+/* PC */
+@media screen and (min-width:768px){
+    .dott--number:nth-child(odd){
+    
+    }
+}
+/* SP */
+@media screen and (max-width:767px) {
+    .dott--number:nth-child(odd){
+        
+    }
+}
+
+.dott {
+    object-fit: contain;
+    position: absolute;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .dott {
+        width: 60px;
+        height: auto;
+        top: -30px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .dott {
+        width: 60px;
+        height: auto;
+        top: -35px;
+        left: -20px;
+    }
 }
 
 
@@ -3203,7 +3248,7 @@ p.yellowline {}
 /* SP */
 @media screen and (max-width:767px) {
     .number--peple p {
-        font-size: 50px;
+        font-size: 120px;
     }
 }
 
@@ -3235,7 +3280,7 @@ p.yellowline {}
 @media screen and (min-width:768px) {
     .p--under {
         width: 450px;
-        height: 50px;
+        /* height: 50px; */
     }
 }
 
@@ -3247,12 +3292,15 @@ p.yellowline {}
     }
 }
 
-.p--under p {}
+.p--under p {
+    color: black;
+}
 
 /* PC */
 @media screen and (min-width:768px) {
     .p--under p {
         font-size: 20px;
+        padding-left: 50px;
     }
 }
 
@@ -3260,8 +3308,30 @@ p.yellowline {}
 @media screen and (max-width:767px) {
     .p--under p {
         font-size: 15px;
+        padding-left: 25px;
     }
 }
+
+.under5 {
+    object-fit: contain;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .under5 {
+        width: 400px;
+        padding-top: 20px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .under5 {
+        width: 300px;
+        padding-top: 10px;
+    }
+}
+
 
 .shitakunaru img {
     object-fit: contain;
