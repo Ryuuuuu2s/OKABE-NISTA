@@ -29,7 +29,7 @@ body {
 
 /* -------------------------------------------------------------- */
 
-.blue--star{
+.blue--star {
     object-fit: contain;
     position: fixed;
     bottom: 0;
@@ -37,16 +37,18 @@ body {
     width: 100%;
     z-index: 1000;
 }
+
 /* PC */
-@media screen and (min-width: 768px){
-    .blue--star{
+@media screen and (min-width: 768px) {
+    .blue--star {
         width: 200px;
         height: auto;
     }
 }
+
 /* SP */
 @media screen and (max-width: 767px) {
-    .blue--star{
+    .blue--star {
         width: 150px;
         height: auto;
     }
@@ -483,12 +485,13 @@ body {
 }
 
 /* animation-delay */
+
 .delay05 {
-    animation-delay: 0.5s;
+    animation-delay: 0.5s !important;
 }
 
 .delay75 {
-    animation-delay: 0.75s;
+    animation-delay: 0.75s ;
 }
 
 .delay10 {
@@ -521,8 +524,16 @@ body {
 
 
 /* animation-duration */
-.duration01 {
-    animation-duration: 1s;
+.duration05 {
+    animation-duration: 0.5s;
+}
+
+.duration1 {
+    animation-duration: 1s !important;
+}
+
+.duration15 {
+    animation-duration: 1.5s;
 }
 
 .duration5 {
@@ -612,10 +623,6 @@ body {
     color: rgb(53, 53, 156);
     gap: 15px;
 }
-
-/* .hushtug p{
-    padding:10px;
-} */
 
 /* KV2 ここまで */
 
@@ -1163,10 +1170,8 @@ body {
 /* アニメーション */
 /* ----------------------------------------------------------------------------------------------- */
 .toUp {
-    animation-name: toUp;
     opacity: 0;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    transform: translateY(100%);
 }
 
 @keyframes toUp {
@@ -1179,6 +1184,10 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.toUp.show {
+    animation: toUp 1s ease  forwards;
 }
 
 .moveRL {
@@ -1728,11 +1737,7 @@ SP
 
 .toDown {
     opacity: 0;
-    animation-name: toDown;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    transform: translateY(-50px);
 }
 
 @keyframes toDown {
@@ -1746,6 +1751,80 @@ SP
         transform: translateY(0);
     }
 }
+
+.toDown.show {
+    animation: toDown 1s ease 0.5s forwards;
+}
+
+/* --------------------------------- */
+
+.leftUp {
+    opacity: 0;
+    transform: translate(0, 5px)rotateZ(5deg);
+}
+
+@keyframes leftUp {
+    0% {
+        opacity: 0;
+        transform: translate(0, 5px)rotateZ(5deg);
+        /* 右斜め下 */
+        transform-origin: 0 50%;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0)rotateZ(0);
+        transform-origin: 0 50%;
+    }
+}
+
+.leftUp.show{
+    animation: leftUp 1s ease-in-out 1s forwards;
+}
+
+/* ------------------------------------ */
+.slideLeft {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slideLeft.show{
+    animation: slideLeft 1s ease-in-out 0.5s forwards;
+}
+
+/* ------------------------------------ */
+.slideRight {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.slideRight.show{
+    animation: slideLeft 1s ease-in-out 0.5s forwards;
+}
+
+/* ---------------------------------- */
 
 .jump {
     animation-name: jump;
@@ -1767,6 +1846,8 @@ SP
         transform: translate(0, 0);
     }
 }
+
+
 
 /* メイン2 ここまで */
 
@@ -2024,9 +2105,7 @@ SP
     }
 }
 
-.yoso1 {
-
-}
+.yoso1 {}
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -2517,11 +2596,12 @@ SP
 /* アニメーション */
 /* ---------------------------------------------------------------------------------------- */
 .yurayura {
-    animation-name:yurayura;
+    animation-name: yurayura;
     animation-duration: 5s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
+
 @keyframes yurayura {
 
     0% {
@@ -2537,12 +2617,13 @@ SP
     }
 }
 
-.yurayura2{
+.yurayura2 {
     animation-name: yurayura2;
     animation-duration: 5s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
+
 @keyframes yurayura2 {
     0% {
         transform: translate(0, 0);
@@ -2556,13 +2637,15 @@ SP
         transform: translate(0, 0);
     }
 }
-.shi-so{
+
+.shi-so {
     animation-name: shi-so;
     animation-duration: 5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes shi-so {
     0% {
         transform: translate(0, 0);
@@ -2577,12 +2660,13 @@ SP
     }
 }
 
-.shi-so2{
+.shi-so2 {
     animation-name: shi-so2;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+
 @keyframes shi-so2 {
     0% {
         transform: translate(0, -40px);
@@ -3675,6 +3759,30 @@ p.yellowline {}
 
 
 /* メイン5 ここまで */
+
+
+/* アニメーション */
+/* --------------------------------------------------------- */
+
+.metro {
+    animation: metro ease infinite;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+}
+
+@keyframes metro {
+
+    0%,
+    100% {
+        transform: rotate(-30deg);
+    }
+
+    50% {
+
+        transform: rotate(30deg);
+    }
+}
+
 
 /* メイン6 ここから */
 /* --------------------------------------------------------------------------------------- */
@@ -4798,7 +4906,7 @@ span.line--yellow {
 /* メイン8 ここまで */
 /* アニメーション */
 /* --------------------------------------------------------------------------- */
-.scaleUp{
+.scaleUp {
     animation-name: scaleUp;
     animation-duration: 1.5s;
     animation-direction: alternate;
