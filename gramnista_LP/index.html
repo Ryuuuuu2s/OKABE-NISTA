@@ -11,12 +11,16 @@
     <title>GRAMNISTA</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    
 </head>
 
 <body>
     <!-- wrapper ここから　-->
     <div class="wrapper">
 
+        <!-- ------------------------------------------------------------------------------- -->
+
+        <img src="images/link.png" alt="ご質問　お悩み　今すぐ無料相談" class="blue--star">
         <!--ヘッダーここから-->
         <!-- --------------------------------------------------------------------------------- -->
         <header class="header">
@@ -53,7 +57,7 @@
                     <div class="icon toTop delay10 duration5"></div>
                     <div class="icon toTop duration10"></div>
                     <div class="icon toTop delay15"></div>
-                    <div class="icon toTop delay10duration10"></div>
+                    <div class="icon toTop delay10 duration10"></div>
                     <div class="icon toTop delay05 duration5"></div>
                     <div class="icon toTop delay20"></div>
                 </div>
@@ -99,11 +103,11 @@
         <main>
             <div class="onayami">
 
-                <div class="onayami--logo">
+                <div class="onayami--logo toUp delay05 duration01">
                     <img src="images/onayami.png" alt="Instagram活用できていますか？こんなお悩みはありませんか？">
                 </div>
 
-                <div class="cloud">
+                <div class="cloud moveRL">
                     <img src="images/cloudOrange.png" class="motion2">
                     <img src="images/cloudPink.png" class="motion3">
                     <img src="images/cloudBlue.png" class="motion4">
@@ -111,26 +115,28 @@
 
                 <div class="hukidashi--all">
 
-                    <img src="images/frame3.png" class="hukidashi--1">
-                    <img src="images/frame2.png" class="hukidashi--2">
-                    <img src="images/frame1.png" class="hukidashi--3">
+                    <img src="images/frame3.png" class="hukidashi--1 toUp delay05 duration01">
+                    <img src="images/frame2.png" class="hukidashi--2 toUp delay75 duration01">
+                    <img src="images/frame1.png" class="hukidashi--3 toUp delay10 duration01">
 
-                    <img src="images/frame4.png" class="hukidashi--4">
-                    <img src="images/frame9.png" class="hukidashi--5">
-                    <img src="images/frame5.png" class="hukidashi--6">
+                    <img src="images/frame4.png" class="hukidashi--4 toUp delay25 duration01">
+                    <img src="images/frame9.png" class="hukidashi--5 toUp delay15 duration01">
+                    <img src="images/frame5.png" class="hukidashi--6 toUp delay175 duration01">
 
 
-                    <img src="images/frame6.png" class="hukidashi--7">
-                    <img src="images/frame7.png" class="hukidashi--8">
-                    <img src="images/frame8.png" class="hukidashi--9">
+                    <img src="images/frame6.png" class="hukidashi--7 toUp delay20 duration01">
+                    <img src="images/frame7.png" class="hukidashi--8 toUp delay225 duration01">
+                    <img src="images/frame8.png" class="hukidashi--9 toUp delay250 duration01">
 
                 </div>
 
-                <img src="images/detail_person.png" class="onayami--person">
+
+                <div class="anime--motion5">
+                    <img src="images/detail_person.png" class="onayami--person">
 
 
-                <img src="images/cloud2.png" class="motion5">
-
+                    <img src="images/cloud2.png" class="motion5 UpDown">
+                </div>
 
 
                 <div class="omakase">
@@ -145,7 +151,7 @@
             <!-- --------------------------------------------------------------------------------- -->
             <div class="how">
 
-                <img src="images/gramnistahow.png" class="how--logo" alt="GRAMNISTAとは？">
+                <img src="images/gramnistahow.png" class="how--logo toDown" alt="GRAMNISTAとは？">
 
 
 
@@ -197,7 +203,7 @@
 
                     <div class="peple--wow">
                         <img src="images/peple.png" class="peple">
-                        <img src="images/wow.png" class="wow" alt="wow">
+                        <img src="images/wow.png" class="wow jump" alt="wow">
                     </div>
 
                 </div>
@@ -233,9 +239,9 @@
 
                 <div class="yoso">
 
-                    <img src="images/cloudOrange.png" class="orange">
+                    <img src="images/cloudOrange.png" class="orange yurayura">
 
-                    <div class="yoso1">
+                    <div class="yoso1 shi-so">
                         <div class="action">
 
                             <p>アクション</p>
@@ -248,9 +254,7 @@
 
 
 
-                    <div class="yoso2">
-
-                        <img src="images/cloudPink.png" class="pink">
+                    <div class="yoso2 shi-so2">
 
                         <div class="tokonaiyou">
                             <p>投稿内容</p>
@@ -258,9 +262,10 @@
 
                         </div>
                         <img src="images/ude2.png" class="ude2">
+
                     </div>
 
-
+                    <img src="images/cloudPink.png" class="pink yurayura2">
 
                 </div>
 
@@ -794,9 +799,9 @@
 
                 </div>
 
-                <div class="muryosodan">
+                <div class="muryosodan scaleUp">
                     <img src="images/greenDott.png" class="muryo--dott1">
-                    <img src="images/free.png" class="free">
+                    <img src="images/free.png" class="free" alt="今すぐ!!まずは無料相談!">
                     <img src="images/purpleDott.png" class="muryo--dott2">
                 </div>
             </div>
@@ -839,25 +844,49 @@
                 <div class="form">
 
                     <div class="form--item">
-                        <p class="asterisk">
-                            <span class="form--name">お名前</span>＊</p>
+                        <div class="astrsk">
+                            <label for="form--input">
+                                <p class="asterisk">
+                                    <span id="form--name">お名前</span>＊
+                                </p>
+                            </label>
+                        </div>
                         <input type="text" class="form--input" placeholder="お名前">
                     </div>
                     <div class="form--item">
-                        <p class="asterisk">
-                            <span class="form--name">ふりがな</span>＊</p>
+                        <div class="astrsk">
+                            <label for="form--input">
+                                <p class="asterisk">
+                                    <span class="form--name">ふりがな</span>＊
+                                </p>
+                            </label>
+                        </div>
                         <input type="text" class="form--input" placeholder="ふりがな">
                     </div>
                     <div class="form--item">
-                        <p class="asterisk"><span class="form--name">電話番号</span>＊</p>
-                        <input type="text" class="form--input" placeholder="00-0000-0000">
+                        <div class="astrsk">
+                            <label for="tel">
+                                <p class="asterisk"><span class="form--name">電話番号</span>＊</p>
+                            </label>
+                        </div>
+
+                        <input type="tel" id="tel" name="tel" class="form--input active" placeholder="00-0000-0000">
                     </div>
                     <div class="form--item">
-                        <p class="asterisk"><span class="form--name">メールアドレス</span>＊</p>
+                        <div class="astrsk">
+                            <label for="form--input">
+                                <p class="asterisk"><span class="form--name">メールアドレス</span>＊</p>
+                            </label>
+                        </div>
                         <input type="email" class="form--input" placeholder="example@gmail.com">
+
                     </div>
                     <div class="form--item">
-                        <p class="asterisk isMsg"><span class="form--name">お問い合わせ内容</span>＊</p>
+                        <div class="astrsk">
+                            <label for="form--input">
+                                <p class="asterisk isMsg"><span class="form--name">お問い合わせ内容</span>＊</p>
+                            </label>
+                        </div>
                         <input type="text" class="form--input" placeholder="内容">
                     </div>
 
@@ -866,8 +895,6 @@
                 </div>
 
 
-
-            </div>
 
         </main>
         <!-- メインここまで -->
@@ -910,6 +937,13 @@
 
         <!-- wrapperここまで -->
     </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    
 </body>
 <!--ボディー　ここまで-->
 

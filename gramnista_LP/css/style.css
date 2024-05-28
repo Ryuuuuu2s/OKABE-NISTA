@@ -27,6 +27,31 @@ body {
     }
 }
 
+/* -------------------------------------------------------------- */
+
+.blue--star{
+    object-fit: contain;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* PC */
+@media screen and (min-width: 768px){
+    .blue--star{
+        width: 200px;
+        height: auto;
+    }
+}
+/* SP */
+@media screen and (max-width: 767px) {
+    .blue--star{
+        width: 150px;
+        height: auto;
+    }
+}
+
 /* ヘッダー ここから */
 /*---------------------------------------------------------------------*/
 .header {
@@ -462,19 +487,44 @@ body {
     animation-delay: 0.5s;
 }
 
+.delay75 {
+    animation-delay: 0.75s;
+}
+
 .delay10 {
     animation-delay: 1s;
+}
+
+.delay25 {
+    animation-delay: 1.25s;
 }
 
 .delay15 {
     animation-delay: 1.5s;
 }
 
+.delay175 {
+    animation-delay: 1.75s;
+}
+
 .delay20 {
     animation-delay: 2s;
 }
 
+.delay225 {
+    animation-delay: 2.25s;
+}
+
+.delay250 {
+    animation-delay: 2.5s;
+}
+
+
 /* animation-duration */
+.duration01 {
+    animation-duration: 1s;
+}
+
 .duration5 {
     animation-duration: 5s;
 }
@@ -596,7 +646,6 @@ body {
         background-size: cover;
         padding-top: 80px;
     }
-
 }
 
 .onayami--logo {
@@ -629,6 +678,27 @@ body {
     .onayami--logo img {
         width: 500px;
         height: auto;
+    }
+}
+
+.cloud {
+    position: relative;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .cloud {
+
+        top: -350px;
+        right: -20px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .cloud {
+        top: -250px;
+        right: -20px;
     }
 }
 
@@ -668,9 +738,9 @@ body {
 /* PC */
 @media screen and (min-width:768px) {
     .motion3 {
-        width: 350px;
+        width: 300px;
         height: auto;
-        right: 60px;
+        right: 50px;
         top: 50px;
     }
 }
@@ -741,6 +811,7 @@ body {
     position: absolute;
 }
 
+
 /* PC */
 @media screen and (min-width:768px) {
     .hukidashi--1 {
@@ -765,6 +836,7 @@ body {
     position: absolute;
 }
 
+
 /* PC */
 @media screen and (min-width:768px) {
     .hukidashi--2 {
@@ -786,6 +858,7 @@ body {
 }
 
 .hukidashi--3 {
+    opacity: 0;
     position: absolute;
 }
 
@@ -953,6 +1026,10 @@ body {
     }
 }
 
+.anime--motion5 {
+    position: relative;
+}
+
 /* PC */
 @media screen and (min-width:768px) {
     .onayami--person {
@@ -974,20 +1051,27 @@ body {
 
 /* 雲 */
 .motion5 {
+    margin: 0 auto;
     position: absolute;
 }
+
 
 /* PC */
 @media screen and (min-width:768px) {
     .motion5 {
-        padding-bottom: 300px;
+        /* padding-bottom: 300px; */
+        bottom: 0;
+        left: 0;
+        width: 1000px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .motion5 {
-        padding-bottom: 100px;
+        /* padding-bottom: 100px; */
+        bottom: 0;
+        left: 0;
     }
 }
 
@@ -1075,8 +1159,68 @@ body {
 
 /* メイン　１　ここまで */
 
+
+/* アニメーション */
+/* ----------------------------------------------------------------------------------------------- */
+.toUp {
+    animation-name: toUp;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.moveRL {
+    animation: moveRL 5s ease infinite;
+}
+
+
+@keyframes moveRL {
+    50% {
+        right: 20px;
+    }
+
+    100% {
+        right: -20px;
+    }
+}
+
+.UpDown {
+    animation-name: UpDown;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes UpDown {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 80px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* アニメーション　ここまで */
+
 /* メイン２ ここから */
-/* --------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------*/
 
 /* ピンク　背景 */
 .how {
@@ -1263,6 +1407,7 @@ body {
 
     }
 }
+
 
 /* SP */
 @media screen and (max-width:767px) {
@@ -1561,22 +1706,67 @@ SP
 /* PC */
 @media screen and (min-width:768px) {
     .wow {
-        top: 200px;
+        top: 150px;
         right: 250px;
+        width: 280px;
+        height: auto;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .wow {
-        width: 150px;
+        width: 160px;
         height: auto;
-        top: 100px;
+        top: 50px;
         right: 120px;
     }
 }
 
+/* アニメーション */
+/* --------------------------------------------------------------------- */
 
+.toDown {
+    opacity: 0;
+    animation-name: toDown;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.jump {
+    animation-name: jump;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 25px)rotateX(50deg);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
 
 /* メイン2 ここまで */
 
@@ -1782,7 +1972,9 @@ SP
 }
 
 
-.yoso {}
+.yoso {
+    position: relative;
+}
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -1817,22 +2009,24 @@ SP
     .orange {
         width: 200px;
         height: auto;
-        left: 180px;
+        left: -30px;
+        top: 20px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
     .orange {
-        width: 150px;
+        width: 180px;
         height: auto;
+        left: 60px;
 
     }
 }
 
+.yoso1 {
 
-
-.yoso1 {}
+}
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -1944,11 +2138,8 @@ SP
     }
 }
 
-
-
-
 .yoso2 {
-    position: relative;
+    /* position: relative; */
 }
 
 /* PC */
@@ -1966,32 +2157,6 @@ SP
         margin-left: auto;
         margin-top: 220px;
         padding-top: 220px;
-    }
-}
-
-
-.pink {
-    position: absolute;
-    object-fit: contain;
-}
-
-/* PC */
-@media screen and (min-width:768px) {
-    .pink {
-        width: 250px;
-        height: auto;
-        right: -50px;
-        bottom: -20px;
-    }
-}
-
-/* SP */
-@media screen and (max-width:767px) {
-    .pink {
-        width: 250px;
-        height: auto;
-        right: 50px;
-        top: 20px;
     }
 }
 
@@ -2092,6 +2257,30 @@ SP
     }
 }
 
+.pink {
+    position: absolute;
+    object-fit: contain;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .pink {
+        width: 250px;
+        height: auto;
+        right: -80px;
+        bottom: 10px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .pink {
+        width: 250px;
+        height: auto;
+        right: 50px;
+        top: 200px;
+    }
+}
 
 .syukyaku {}
 
@@ -2322,6 +2511,89 @@ SP
 @media screen and (max-width:767px) {
     .ga {
         width: 20px;
+    }
+}
+
+/* アニメーション */
+/* ---------------------------------------------------------------------------------------- */
+.yurayura {
+    animation-name:yurayura;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes yurayura {
+
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(-20px, -15px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.yurayura2{
+    animation-name: yurayura2;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes yurayura2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(15px, 25px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+.shi-so{
+    animation-name: shi-so;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes shi-so {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -60px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.shi-so2{
+    animation-name: shi-so2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes shi-so2 {
+    0% {
+        transform: translate(0, -40px);
+    }
+
+    50% {
+        transform: translate(0, 20px);
+    }
+
+    100% {
+        transform: translate(0, -40px);
     }
 }
 
@@ -4473,9 +4745,12 @@ span.line--yellow {
     }
 }
 
+
+
 .free {
     margin: 0 auto;
     object-fit: contain;
+
 
 }
 
@@ -4521,6 +4796,25 @@ span.line--yellow {
 }
 
 /* メイン8 ここまで */
+/* アニメーション */
+/* --------------------------------------------------------------------------- */
+.scaleUp{
+    animation-name: scaleUp;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.85, 0.85);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
 
 /* メイン9 ここから */
 /* ---------------------------------------------------------------------------------- */
@@ -4530,15 +4824,17 @@ span.line--yellow {
     background-size: cover;
     background-image: url(../images/suisai.png);
 }
+
 /* PC */
-@media screen and (min-width:768px){
-    .toiawase{
+@media screen and (min-width:768px) {
+    .toiawase {
         padding-bottom: 60px;
     }
 }
+
 /* SP */
-@media screen and (max-width:767px){
-    .toiawase{
+@media screen and (max-width:767px) {
+    .toiawase {
         padding-bottom: 40px;
     }
 }
@@ -4764,6 +5060,22 @@ span.line--yellow {
     }
 }
 
+.astrsk {}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .astrsk {
+        width: 154px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .astrsk {
+        width: 136px;
+    }
+}
+
 .asterisk {
     color: rgb(181, 9, 23);
 }
@@ -4772,6 +5084,7 @@ span.line--yellow {
 @media screen and (min-width:768px) {
     .asterisk {
         font-size: 10px;
+
     }
 }
 
@@ -4838,8 +5151,8 @@ span.form--name {
 @media screen and (min-width:768px) {
     .form--item:nth-child(5) .form--input {
         height: 200px;
-       
-        
+
+
     }
 }
 
