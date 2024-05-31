@@ -15,12 +15,12 @@
 
 
 $(window).scroll(function () {
-    
+
     $('.toUp ,.toDown ,.leftUp ,.slideLeft ,.slideRight').each(function () {
 
-            let scrollPosition = $(window).scrollTop();
-            let windowHeight = $(window).height();
-            let elementTopPosition = $(this).offset().top;
+        let scrollPosition = $(window).scrollTop();
+        let windowHeight = $(window).height();
+        let elementTopPosition = $(this).offset().top;
 
         if (scrollPosition + windowHeight > elementTopPosition) {
             $(this).addClass('show');
@@ -28,3 +28,59 @@ $(window).scroll(function () {
 
     });
 });
+
+
+$(document).ready(function () {
+    $("#form").validate({
+        rules: {
+            name: {
+                required: true,
+            },
+            hiragana: {
+                required: true,
+            },
+            tel: {
+                required: false,
+            },
+            mail: {
+                required: true,
+                email: true,
+            },
+            xt: {
+                required: true,
+            },
+            agreement: {
+                required: true
+            },
+        },
+        messages: {
+            name: {
+                required: "お名前を入力してください"
+            },
+            hiragana: {
+                required: "ふりがなを入力してください"
+            },
+            tel: {
+                number: "電話番号を入力してください"
+            },
+            mail: {
+                required: "メールアドレスを入力してください",
+                email: "メールアドレスを正しく入力してください"
+            },
+            xt: {
+                required: "お問い合わせ内容を入力してください"
+            },
+            agreement: {
+                required: "プライバシーポリシーに同意してください"
+            }
+
+        },
+        errorClass: "err",
+        errorElement: "p",
+        errorPlacement: function (error, element) {
+            error.appendTo(element.parent());
+        },
+    })
+
+});
+

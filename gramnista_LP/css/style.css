@@ -491,11 +491,11 @@ body {
 }
 
 .delay75 {
-    animation-delay: 0.75s ;
+    animation-delay: 0.75s !important;
 }
 
 .delay10 {
-    animation-delay: 1s;
+    animation-delay: 1s !important;
 }
 
 .delay25 {
@@ -1187,7 +1187,7 @@ body {
 }
 
 .toUp.show {
-    animation: toUp 1s ease  forwards;
+    animation: toUp 1s ease forwards;
 }
 
 .moveRL {
@@ -1778,7 +1778,7 @@ SP
     }
 }
 
-.leftUp.show{
+.leftUp.show {
     animation: leftUp 1s ease-in-out 1s forwards;
 }
 
@@ -1799,7 +1799,8 @@ SP
         transform: translateX(0);
     }
 }
-.slideLeft.show{
+
+.slideLeft.show {
     animation: slideLeft 1s ease-in-out 0.5s forwards;
 }
 
@@ -1820,8 +1821,9 @@ SP
         transform: translateX(0);
     }
 }
-.slideRight.show{
-    animation: slideLeft 1s ease-in-out 0.5s forwards;
+
+.slideRight.show {
+    animation: slideRight 1s ease-in-out 0.5s forwards;
 }
 
 /* ---------------------------------- */
@@ -2105,7 +2107,7 @@ SP
     }
 }
 
-.yoso1 {}
+/* .yoso1 {} */
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -2217,9 +2219,8 @@ SP
     }
 }
 
-.yoso2 {
-    /* position: relative; */
-}
+/* .yoso2 {
+} */
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -2361,7 +2362,7 @@ SP
     }
 }
 
-.syukyaku {}
+/* .syukyaku {} */
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -2577,7 +2578,7 @@ SP
     }
 }
 
-.ga {}
+/* .ga {} */
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -2862,7 +2863,7 @@ SP
     }
 }
 
-.points--box {}
+/* .points--box {} */
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -2913,7 +2914,6 @@ SP
 
     }
 }
-
 
 .pink--box img {
     object-fit: contain;
@@ -3047,7 +3047,7 @@ SP
     }
 }
 
-span.pink--line {}
+/* span.pink--line {} */
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -3301,6 +3301,12 @@ span.pink--line {}
 }
 
 
+
+/* アニメーション */
+/* ------------------------------------------------------------------------ */
+
+
+
 /* メイン5　ここから */
 /* ----------------------------------------------------------------------------------------- */
 
@@ -3431,7 +3437,7 @@ span.pink--line {}
 }
 
 
-p.yellowline {}
+/* p.yellowline {} */
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -3547,22 +3553,6 @@ p.yellowline {}
     align-items: flex-end;
 }
 
-/* PC */
-@media screen and (min-width:768px) {
-    .shitakunaru {
-        /* width: 550px; */
-
-    }
-}
-
-/* SP */
-@media screen and (max-width:767px) {
-    .shitakunaru {
-        /* width: 455px; */
-    }
-}
-
-
 .shitakunaru:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
@@ -3604,32 +3594,6 @@ p.yellowline {}
     flex-direction: row-reverse;
 }
 
-/* PC */
-@media screen and (min-width:768px) {
-    .number--peple {}
-}
-
-/* SP */
-@media screen and (max-width:767px) {
-    .number--peple {}
-}
-
-/* PC */
-@media screen and (min-width:768px) {
-    .number--peple:nth-child(odd) {}
-}
-
-.dott--number {}
-
-/* PC */
-@media screen and (min-width:768px) {
-    .dott--number:nth-child(odd) {}
-}
-
-/* SP */
-@media screen and (max-width:767px) {
-    .dott--number:nth-child(odd) {}
-}
 
 .dott {
     object-fit: contain;
@@ -4144,7 +4108,7 @@ p.yellowline {}
 /* メイン6 ここまで */
 /* メイン７　ここから */
 /* -------------------------------------------------------------------------------------- */
-.about--cost {}
+/* .about--cost {} */
 
 /* PC */
 @media screen and (min-width:768px) {
@@ -4711,34 +4675,28 @@ span.line--yellow {
     }
 }
 
-.triangular {
-
+.triangle {
     position: absolute;
-    background-color: black;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .triangular {
-
+    .triangle {
         width: 35px;
-        height: 35px;
-        top: 50%;
+        height: auto;
+        top: 45%;
         right: -30px;
-        /* border-radius: 5px; */
-        border-bottom-left-radius: 5px;
-        border-top-left-radius: 5px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    .triangular {
+    .triangle {
         width: 35px;
-        height: 35px;
+        height: auto;
         bottom: -35px;
         left: 46%;
-
+        transform: rotate(90deg);
     }
 }
 
@@ -5079,22 +5037,6 @@ span.line--yellow {
     flex-direction: column;
 }
 
-/* PC */
-@media screen and (min-width:768px) {
-    .tejun--3 {
-        /* gap:200px; */
-        /* width: 550px; */
-    }
-}
-
-/* SP */
-@media screen and (max-width:767px) {
-    .tejun--3 {
-        /* gap:100px; */
-        /* width: 350px; */
-    }
-}
-
 .tejun {
     text-align: center;
     color: rgb(255, 85, 113);
@@ -5125,6 +5067,7 @@ span.line--yellow {
 @media screen and (min-width:768px) {
     .form {
         width: 1000px;
+        padding-top: 50px;
         padding-bottom: 50px;
     }
 }
@@ -5133,23 +5076,24 @@ span.line--yellow {
 @media screen and (max-width:767px) {
     .form {
         width: 600px;
+        padding-top: 40px;
         padding-bottom: 40px;
     }
 }
 
-.form--item {
+.item {
     display: flex;
     margin: 0 auto;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .form--item {
+    .item {
         /* line-height: 50px; */
-        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
         padding-top: 24px;
         padding-bottom: 24px;
-        width: 900px;
+        width: 700px;
         display: flex;
         align-items: center;
 
@@ -5158,8 +5102,8 @@ span.line--yellow {
 
 /* SP */
 @media screen and (max-width:767px) {
-    .form--item {
-        border-top: 1px solid #ddd;
+    .item {
+        border-bottom: 1px solid #ddd;
         padding-top: 12px;
         padding-bottom: 12px;
         width: 424px;
@@ -5168,68 +5112,69 @@ span.line--yellow {
     }
 }
 
-.astrsk {}
+/* .contents {} */
 
 /* PC */
 @media screen and (min-width:768px) {
-    .astrsk {
-        width: 154px;
+    .contents {
+        width: 160px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    .astrsk {
-        width: 136px;
+    .contents {
+        width: 142px;
     }
 }
 
-.asterisk {
-    color: rgb(181, 9, 23);
-}
-
-/* PC */
-@media screen and (min-width:768px) {
-    .asterisk {
-        font-size: 10px;
-
-    }
-}
-
-/* SP */
-@media screen and (max-width:767px) {
-    .asterisk {
-        font-size: 8px;
-    }
-}
-
-span.form--name {
+.contents--title {
     color: black;
     text-align: left;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    span.form--name {
+    .contents--title {
         font-size: 18px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    span.form--name {
+    .contents--title {
         font-size: 16px;
     }
 }
 
-.form--input {
+.contents--title::after {
+    content: '＊';
+    color: rgb(181, 9, 23);
+    vertical-align: top;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .contents--title::after {
+        font-size: 10px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .contents--title::after {
+        font-size: 8px;
+    }
+}
+
+.required {
     width: 100%;
     border: 1px solid #ddd;
 }
 
 /* PC */
 @media screen and (min-width:768px) {
-    .form--input {
+    .required {
         border-radius: 6px;
         margin-left: 40px;
         padding-left: 1em;
@@ -5243,7 +5188,7 @@ span.form--name {
 
 /* SP */
 @media screen and (max-width:767px) {
-    .form--input {
+    .required {
         flex: 1;
         height: 40px;
         font-size: 13px;
@@ -5257,7 +5202,7 @@ span.form--name {
 
 /* PC */
 @media screen and (min-width:768px) {
-    .form--item:nth-child(5) .form--input {
+    .item:nth-child(5) .required {
         height: 200px;
 
 
@@ -5266,12 +5211,125 @@ span.form--name {
 
 /* SP */
 @media screen and (max-width:767px) {
-    .form--item:nth-child(5) .form--input {
+    .item:nth-child(5) .required {
         height: 120px;
     }
 }
 
-.form--btn {
+.policy {
+    text-align: left;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .policy {
+        font-size: 16px;
+        padding-top: 30px;
+        padding-left: 150px;
+        padding-bottom: 20px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .policy {
+        font-size: 14px;
+        padding-top: 15px;
+        padding-left: 85px;
+        padding-bottom: 15px;
+    }
+}
+
+.policy--box {
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    overflow-y: scroll;
+    /* 縦方向にスクロール可能にする */
+}
+
+
+/* PC */
+@media screen and (min-width:768px) {
+    .policy--box {
+        width: 700px;
+        height: 90px;
+        padding: 8px;
+        margin-bottom: 15px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .policy--box {
+        width: 424px;
+        height: 80px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.policy--words {}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .policy--words {
+        font-size: 14px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .policy--words {
+        font-size: 10px;
+    }
+}
+
+.agreement {
+    display: flex;
+    margin-left: 0;
+    text-align: left;
+    align-items: flex-end;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    .agreement {
+        width: 400px;
+        font-size: 14px;
+        padding-left: 150px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    .agreement {
+        width: 300px;
+        font-size: 12px;
+        padding-left: 90px;
+    }
+}
+
+#agreement.required {
+    margin: 0 auto;
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    #agreement.required {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    #agreement.required {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.Btn {
     margin: 0 auto;
     display: block;
     background-color: rgb(255, 85, 113);
@@ -5281,7 +5339,7 @@ span.form--name {
 
 /* PC */
 @media screen and (min-width:768px) {
-    .form--btn {
+    .Btn {
         width: 150px;
         font-size: 18px;
         margin-top: 20px;
@@ -5292,18 +5350,18 @@ span.form--name {
 
 /* SP */
 @media screen and (max-width:767px) {
-    .form--btn {
+    .Btn {
         width: 120px;
         font-size: 16px;
         margin-top: 20px;
-        padding-top: 5px;
+        padding-top: 10px;
         padding-bottom: 5px;
     }
 }
 
 /* メイン9 ここまで */
 /* フッター ここから*/
-/* --------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 footer {
     color: darkblue;
     background: gainsboro;
