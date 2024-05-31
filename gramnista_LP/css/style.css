@@ -5149,7 +5149,7 @@ span.line--yellow {
 
 .contents--title::after {
     content: '＊';
-    color: rgb(181, 9, 23);
+    color: rgb(230, 65, 93);
     vertical-align: top;
 }
 
@@ -5166,6 +5166,12 @@ span.line--yellow {
         font-size: 8px;
     }
 }
+
+/* 
+input.error {
+border: 1px solid red;
+color:red;
+} */
 
 .required {
     width: 100%;
@@ -5200,21 +5206,113 @@ span.line--yellow {
     }
 }
 
+input.err{
+    border: 2px solid rgb(230, 65, 93);
+}
+
+
+p.err {
+    color: rgb(230, 65, 93);
+    position: absolute;
+
+}
+
 /* PC */
 @media screen and (min-width:768px) {
-    .item:nth-child(5) .required {
-        height: 200px;
-
-
+    p.err {
+        font-size: 14px;
     }
 }
 
 /* SP */
 @media screen and (max-width:767px) {
-    .item:nth-child(5) .required {
-        height: 120px;
+    p.err {
+        font-size: 11px;
     }
 }
+
+
+/* PC */
+@media screen and (min-width:768px) {
+    #name-error.err {
+        top: 137px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    #name-error.err {
+        top: 98px;
+    }
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    #hiragana-error.err {
+        top: 240px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    #hiragana-error.err {
+        top: 169px;
+    }
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    #tel-error.err {
+        top: 342px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    #tel-error.err {
+        top: 240px;
+    }
+}
+
+/* PC */
+@media screen and (min-width:768px) {
+    #mail-error.err {
+        top: 445px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    #mail-error.err {
+        top: 312px;
+    }
+}
+/* PC */
+@media screen and (min-width:768px){
+    #xt-error.err{
+        bottom: 344px;
+    }
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+    #xt-error.err {
+        top: 383px;
+    }
+}
+/* PC */
+@media screen and (min-width:768px){
+    #agreement-error.err{
+        bottom:125px;
+    }
+}
+/* SP */
+@media screen and (max-width:767px) {
+    #agreement-error.err {
+        bottom:100px;
+    }
+}
+
 
 .policy {
     text-align: left;
@@ -5342,7 +5440,7 @@ span.line--yellow {
     .Btn {
         width: 150px;
         font-size: 18px;
-        margin-top: 20px;
+        margin-top: 50px;
         padding-top: 7px;
         padding-bottom: 7px;
     }
@@ -5353,8 +5451,8 @@ span.line--yellow {
     .Btn {
         width: 120px;
         font-size: 16px;
-        margin-top: 20px;
-        padding-top: 10px;
+        margin-top: 40px;
+        padding-top: 5px;
         padding-bottom: 5px;
     }
 }

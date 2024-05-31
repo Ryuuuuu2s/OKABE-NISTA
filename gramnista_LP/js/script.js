@@ -40,7 +40,8 @@ $(document).ready(function () {
                 required: true,
             },
             tel: {
-                required: false,
+                required:true,
+                // required: false,   
             },
             mail: {
                 required: true,
@@ -61,7 +62,8 @@ $(document).ready(function () {
                 required: "ふりがなを入力してください"
             },
             tel: {
-                number: "電話番号を入力してください"
+                required:"電話番号を入力してください",
+                number: "電話番号を正しく入力してください"
             },
             mail: {
                 required: "メールアドレスを入力してください",
@@ -75,6 +77,9 @@ $(document).ready(function () {
             }
 
         },
+
+        
+
         errorClass: "err",
         errorElement: "p",
         errorPlacement: function (error, element) {
